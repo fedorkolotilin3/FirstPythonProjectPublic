@@ -40,6 +40,7 @@
 Включает в себе меню выбора прочих активностей и минимальную информацию для старта в использовании приложения
 Активности к выбору
 
+1) [Printing Activity](#printing-activity) (если есть последняя ранее выбранная библиотека) 
 1) [Choose Library](#choose-library-activity)
 2) [Help](#helpactivity)
 3) [Score Board](#score-board-activity))
@@ -92,4 +93,124 @@
 Осуществляет вывод правил приложения, общей информации а также деталей [Printing Activity](#printing-activity)
 
 
+# Архитектура проекта (структура классов)
 
+## Вспомогательные классы
+
+
+* ### Attempt
+  - attributes:  
+    -   Library using_libray
+    -   AttemptScore score
+  - methods:
+    
+* ### AttemptScore
+  - attributes:   
+  - - int errors_count
+  - - int chars_count
+  - - int time
+  - methods:   
+
+* ### Library
+  - attributes:
+  - methods:
+  - - GetText()
+  - - ReadLibrary(string dir_path)     #локальные файлы приложения с папкой библиотеки, пересобранной  под мои нужды
+  - - CreateLibrary(string dir_path)   #глобальные файлы пользователя, в спец. формате под создание библиотеки
+
+
+* ### Activity (abstract)
+  - attributes:  
+  - - string activity_name
+  - - ContentList content_list
+  - methods:   
+  - - PrintHelp()
+  - - OnCreate() # вызывается при создании активности для иницализации переменных и т.д.
+  - - Escape()   
+
+
+* ### Content 
+  - attributes: 
+  - - Content parent
+  - - string item_text
+  - methods:      
+  - - Action() #action that can do user by this item
+  - - PrintContent()
+                                          
+* ### TextContent 
+     - - - - #can be edited and reprinted after (example: **_введенная строка_**   )                                                  
+  - 
+  - attributes:                                                                                                                                
+  - methods:
+  - - Print()
+  - - RePrint()
+        
+
+* ### ContentList : Content
+  - attributes:
+  - - is_active
+  - - list[Content] items
+  - - int current_item_number
+  - methods:
+  - - Activate() `enter`             
+  - - Disable()  `esc`
+  - - GoNext()
+  - - GoPrevious()
+  - - GetItem()
+  - - AddItem(Content int pos = 0)
+
+
+
+
+## User Experience классы   (сявязанные с взаимодействием с пользователем)
+
+* ### StartActivity                                                        
+  - attributes:
+  - - Library previous_library
+  - - ChooseLibraryActivity choose_library_activity
+  - - HelpActivity help_activity
+  - - PrintingActivity printing_activity
+  - - ScoreBoardActivity score_board_activity
+  - methods:             
+                                                                     
+* ### ChooseLibraryActivity                                                  
+  - attributes:
+  - - list[Library] existing_libs
+  - methods:            
+  - - SetLibrary()
+  - - StartPrintingActivity()
+
+* ### PrintingActivity                                          
+  - attributes:
+  - - Attempt attempt
+  - - PauseActivity pause_activity
+  - - TextContent text_to_print
+  - - TextContent printed_text
+  - methods
+  - - ReadKeyboard()   # проверка введенных сиволов и соотв. логика
+  - - SaveAttempt() 
+                                                                     
+* ### PauseActivity       
+  - attributes:  
+  - - StartActivity start_activity
+  - methods:      
+
+* ### AddLibraryActivity                             
+  - attributes:                                 
+  - - string path_to_library
+  - methods:                             
+  - - PrintInfo()   # выводит правила папки которая прочтется как библиотека
+  - - ReadPath()    # считывает путь до добавляемой библиотеки
+  - - AddLibrary()  # создает библиотеку по указанному пути  
+                                                
+* ### ScoreBoardActivity                     
+  - attributes:
+  - - list[Attempt] previous_attempts
+  - methods:        
+  - - PrintBoard()  # выводит доску результатов
+
+* ### HelpActivity                        
+  - attributes:  
+  - methods:
+  - - PrintInfo()   #выводит текст подсказки
+                                                                                                
