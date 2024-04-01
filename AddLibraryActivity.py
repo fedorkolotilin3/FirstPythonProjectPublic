@@ -20,10 +20,10 @@ class AddLibraryActivity(Activity):
         def local_lambda():
             result_fl = ""
             result_name = ""
-            try:
-                result_fl, result_name = LibraryManager.AddLibrary(self.edit_text.text_of_content)
-            except BaseException as e:
-                result_fl = str(e)
+            # try:
+            result_fl, result_name = LibraryManager.AddLibrary(self.edit_text.text_of_content)
+            # except BaseException as e:
+            #     result_fl = str(e)
             if result_fl:
                 old_text = self.edit_text.text_of_content
                 self.edit_text.text_of_content = result_fl

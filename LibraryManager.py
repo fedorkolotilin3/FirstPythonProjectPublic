@@ -36,15 +36,20 @@ def Load():
         libs_names = json_dict["libraries"]
 
 def AddLibrary(dir_path):
+    global path_to_dir
     abs_path_to_dir = os.path.abspath(".")
+    dir_name = os.path.basename(dir_path)
     list_dir = os.listdir(dir_path)
     for file in list_dir:
         if not file.endswith("txt"):
             Log.print("LM-er error" + file)
             return "Ошибка, укащите КОРРЕКТНУЮ дирректорию", ""
-    global path_to_dir
-    dir_name = os.path.basename(dir_path)
-    shutil.copytree(dir_path, abs_path_to_dir + "/" + path_to_dir + "/" + dir_name)
+
+    lib_content = ""
+    for file in list_dir:
+        lib_content += GetDataFromFile(dir_path + "/" + file)
+    open(abs_path_to_dir + "/" + path_to_dir + "/" + dir_name + ".txt", "w").write(lib_content)
+    # shutil.copytree(dir_path, abs_path_to_dir + "/" + path_to_dir + "/" + dir_name)
     Load()
     global json_dict
     json_dict["libraries"].append(dir_name)
@@ -62,17 +67,23 @@ def GenerateTexts():
     if GetLibraryNum() == -1:
         return
     lib_dir = path_to_dir + "/" + GetLibrary()
-    for file in os.listdir(lib_dir):
-        with open(lib_dir + "/" + file, 'rb') as o_file:
-            data = o_file.read().decode("utf-8", "replace").replace("�", "").replace('\n', '').replace('–', '').replace('  ', ' ').replace('…', '...')
-            words = data.split()
-            start_positions = [random.randint(0, len(words) - words_count) for i in range(40)]
-            for i in start_positions:
-                text = ""
-                for j in range(words_count):
-                    text += words[i + j] + (" " if j != words_count - 1 else '')
-                texts.append(text)
+    data = GetDataFromFile(lib_dir + ".txt")
+    words = data.split()
+    start_positions = [random.randint(0, len(words) - words_count) for i in range(40)]
+    for i in start_positions:
+        text = ""
+        for j in range(words_count):
+            text += words[i + j] + (" " if j != words_count - 1 else '')
+        texts.append(text)
     Log.print(texts)
 
+def GetDataFromFile(file):
+    with open(file, 'rb') as o_file:
+        data = o_file.read().decode("utf-8", "replace").replace("�", "").replace('\n', '').replace('–', '').replace(
+            '  ', ' ').replace('…', '...')
+        return data
 
 Load()
+
+
+# /home/fedorkolotilin/PycharmProjects/FirstPythonProject/files/py_lib

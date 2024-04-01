@@ -1,10 +1,8 @@
 {
     "current_lib_num": 0,
     "libraries": [
+        "py_lib",
         "EnEasy",
-        "RuEasy",
-        "RuMedium",
-        "EnMedium",
-        "py_lib"
+        "RuEasy"
     ]
 }

@@ -26,7 +26,7 @@ class PrintingActivity(Activity):
                 self.timer.PrintContent()
                 self.widget.move(self.false_text.y, self.false_text.x + len(self.false_text.text_of_content))
                 self.widget.refresh()
-                time.sleep(0.1)
+                time.sleep(0.01)
         self.timer_thread_active = True
         self.timer = Content("time: ", self.widget, 0, 10)
         self.timer_thread = threading.Thread(target=CalculateTimer)
