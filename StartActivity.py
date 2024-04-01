@@ -4,6 +4,7 @@ from Activity import Activity
 from ChooseLibraryActivity import ChooseLibraryActivity
 from Content import Content
 from ContentList import ContentList
+from HelpActivity import HelpActivity
 from PrintingActivity import PrintingActivity
 
 
@@ -11,13 +12,13 @@ class StartActivity(Activity):
     menu = None
     def __init__(self, widget, key_listener):
         self.activity_name = "Hello, User! You are in main menu"
-        super().__init__(widget, key_listener)
+        super().__init__(widget, key_listener, activity_name=self.activity_name)
 
     def OnCreate(self):
-        self.name_content = Content(self.activity_name, self.widget)
+        super().OnCreate()
+        # self.name_content = Content(self.activity_name, self.widget)
         self.menu = ContentList("start_activity_main_manu",
                                 self.widget, 0, 3)
-        Log.print(self.menu.text_of_content)
         if LibraryManager.GetLibraryNum() != -1:
             printing_activity_ref = Content("Start printing", self.widget)
 
@@ -38,7 +39,13 @@ class StartActivity(Activity):
             choose_library_activity.Show()
         choose_library_activity_ref.SetAction(local_lambda)
 
+        def local_lambda():
+            help_activity = HelpActivity(self.widget, self.key_listener, self, "it's help")
+            self.key_listener.AddActivity(help_activity)
+            self.Escape()
+            help_activity.Show()
         help_activity_ref = Content("Help", self.widget)
+        help_activity_ref.SetAction(local_lambda)
         score_board_activity_ref = Content("Your score", self.widget)
         self.menu.AddItem(choose_library_activity_ref)
         self.menu.AddItem(help_activity_ref)
@@ -48,7 +55,7 @@ class StartActivity(Activity):
         self.menu.Activate()
 
     def Show(self):
-        self.name_content.PrintContent()
+        super().Show()
         self.menu.PrintContent()
         self.menu.Activate()
     def KeyEvent(self, pair):

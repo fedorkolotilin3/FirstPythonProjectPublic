@@ -16,10 +16,11 @@ class Activity:
     def __init__(self, widget, key_listener, parent_activity=None, activity_name=""):
         self.widget = widget
         self.key_listener = key_listener
-        self.OnCreate()
         self.parent_activity = parent_activity
+        self.activity_name = activity_name
+        self.OnCreate()
     def PrintHelp(self):
-        string_to_print = "It's basic activity, no print info here\n"
+        string_to_print = "It's basic activity, no info to print here\n"
         self.widget.addstr(string_to_print)
     def OnCreate(self):
         self.name_content = Content(self.activity_name, self.widget)

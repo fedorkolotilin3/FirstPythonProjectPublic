@@ -9,9 +9,9 @@ import json
 
 class ChooseLibraryActivity(Activity):
     menu = None
-    def __init__(self, widget, key_listener, parent_activity=None):
+    def __init__(self, widget, key_listener, parent_activity=None, activity_name=""):
         self.activity_name = "Here you can choose your library, from which words will be select"
-        super().__init__(widget, key_listener, parent_activity)
+        super().__init__(widget, key_listener, parent_activity, activity_name=self.activity_name)
 
     def OnCreate(self):
         super().OnCreate()
