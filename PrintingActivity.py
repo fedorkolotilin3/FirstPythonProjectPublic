@@ -19,6 +19,7 @@ class PrintingActivity(Activity):
     def OnCreate(self):
         super().OnCreate()
         def CalculateTimer():
+            time.sleep(0.1)
             start_time = time.time()
             while self.timer_thread_active:
                 # _time = time.time()
@@ -60,6 +61,8 @@ class PrintingActivity(Activity):
             if self.false_text.text_of_content:
                 self.false_text.Add(str(value))
             else:
+                if self.position >= len(self.activity_name):
+                    return
                 if str(value) == self.activity_name[self.position]:
                     self.edit_text.Add(str(value))
                     self.false_text.x += 1

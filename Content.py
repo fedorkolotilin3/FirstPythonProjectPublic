@@ -34,6 +34,7 @@ class Content:
         for x in range(self.widget.getmaxyx()[1] - self.x):
             self.widget.delch(y, self.x)
 
+
     def SetAction(self, action):
         self.Action = action
         self.has_action = True

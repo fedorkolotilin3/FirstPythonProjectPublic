@@ -20,7 +20,6 @@ class ChooseLibraryActivity(Activity):
         libs_names = LibraryManager.GetLibraries()
         for lib_name in libs_names:
             self.AddLib(lib_name)
-        self.menu.current_item_number = 0 if LibraryManager.GetLibraryNum() == -1 else LibraryManager.GetLibraryNum()
         add_lib_ref = Content("Add new Library", self.widget)
         def local_lambda():
             add_lib_activity = AddLibraryActivity(self.widget, self.key_listener, self)
@@ -29,6 +28,7 @@ class ChooseLibraryActivity(Activity):
             add_lib_activity.Show()
         add_lib_ref.SetAction(local_lambda)
         self.menu.AddItem(add_lib_ref)
+        self.menu.current_item_number = 0 if LibraryManager.GetLibraryNum() == -1 else LibraryManager.GetLibraryNum()
 
 
 
