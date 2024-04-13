@@ -6,6 +6,7 @@ from Content import Content
 from ContentList import ContentList
 from HelpActivity import HelpActivity
 from PrintingActivity import PrintingActivity
+from ScoreBoardActivity import ScoreBoardActivity
 
 
 class StartActivity(Activity):
@@ -46,7 +47,15 @@ class StartActivity(Activity):
             help_activity.Show()
         help_activity_ref = Content("Help", self.widget)
         help_activity_ref.SetAction(local_lambda)
+
         score_board_activity_ref = Content("Your score", self.widget)
+
+        def local_lambda():
+            score_board_activity = ScoreBoardActivity(self.widget, self.key_listener, self, "Score Board")
+            self.key_listener.AddActivity(score_board_activity)
+            self.Escape()
+            score_board_activity.Show()
+        score_board_activity_ref.SetAction(local_lambda)
         self.menu.AddItem(choose_library_activity_ref)
         self.menu.AddItem(help_activity_ref)
         self.menu.AddItem(score_board_activity_ref)

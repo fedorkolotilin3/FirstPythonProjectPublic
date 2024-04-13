@@ -30,3 +30,6 @@ class KeyListner:
             key = KeyCodes.GetKey(self.raw_key)
             for activity in self.listening_activities:
                 activity.KeyEvent(key)
+    def WaitForEnter(self):
+        while not (self.widget.get_wch() in KeyCodes[KeyCodes.Keys.ACTIVATE]):
+            pass

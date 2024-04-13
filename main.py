@@ -1,10 +1,10 @@
 import curses
 
+import Attempt
 import KeyCodes
 import Log
 from KeyListner import KeyListner
 from StartActivity import StartActivity
-
 
 def main(stdscr):
     curses.init_pair(1, curses.COLOR_WHITE, curses.COLOR_BLACK)

@@ -17,9 +17,12 @@ class EditTextContent(Content):
 
     def Delete(self):
         if len(self.text_of_content) > 0:
+            self.ClearContent()
             self.text_of_content = self.text_of_content[:-1]
+            self.ReCountGeometry()
         self.PrintContent()
 
     def Add(self, string):
         self.text_of_content += string
+        self.ReCountGeometry()
         self.PrintContent()
