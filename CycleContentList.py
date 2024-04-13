@@ -1,3 +1,8 @@
+import curses
+from copy import copy
+
+import Log
+from Content import Content
 from ContentList import ContentList
 
 
@@ -13,6 +18,9 @@ class CycleContentList(ContentList):
 
     def KeyIvent(self, key):
         super().KeyIvent(key)
+
+    def GetHeight(self):
+        return self.max_height
 
     def Disable(self):
         super().Disable()
@@ -40,9 +48,20 @@ class CycleContentList(ContentList):
         super().AddItem(content, ind)
 
     def PrintContent(self):
+        # Log.print("printing content")
         for i in range(self.first_view_item,
                        min(len(self.items), self.last_view_item + 1)):
-            item = self.items[i]
-            item.y = self.y + i - self.first_view_item
+            # Log.print(f"printing itme: {i}")
+            item = copy(self.items[i])
+            item.y = self.y + i - self.first_view_item + self.ParentY()
+            item.x += self.ParentX()
             item.PrintContent()
         self.widget.refresh()
+
+    def __copy__(self):
+        copy_res = super().__copy__()
+        copy_res.max_height = self.max_height
+        copy_res.first_view_item = self.first_view_item
+        copy_res.last_view_item = self.last_view_item
+        copy_res.SetColor(self.color)
+        return copy_res

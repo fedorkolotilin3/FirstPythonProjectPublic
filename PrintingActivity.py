@@ -15,9 +15,11 @@ from EditTextContent import EditTextContent
 class PrintingActivity(Activity):
     def __init__(self, widget, key_listener, parent_activity=None, activity_name=""):
         self.position = 0
+        self.best_position = 0
         self.activity_name = LibraryManager.GetText()
         self.error_counter = Content("errors count: 0", widget, 0, 14)
         self.start_time = time.time();
+        self.last_true_time = self.start_time
         self.attempt = Attempt.Attempt()
         super().__init__(widget, key_listener, parent_activity, self.activity_name)
 
@@ -71,7 +73,7 @@ class PrintingActivity(Activity):
                 else:
                     if self.edit_text.text_of_content != "":
                         self.edit_text.Delete()
-                        self.position -= 1
+                        self.PrevSymb()
         else:
             if self.false_text.text_of_content:
                 self.false_text.Add(str(value))
@@ -81,16 +83,13 @@ class PrintingActivity(Activity):
                     return
                 if str(value) == self.activity_name[self.position]:
                     self.edit_text.Add(str(value))
-                    self.position += 1
+                    self.NextSymb()
                 else:
                     n_y, n_x = self.edit_text.NextSymbol()
-                    Log.print(n_y, " ")
-                    Log.print(n_x)
                     self.false_text.start = n_x
                     self.false_text.y = n_y
-                    Log.print("ft", " ")
-                    Log.print(self.false_text)
                     self.false_text.Add(str(value))
+                    self.FalseSymb()
                     self.OnError()
 
 
@@ -113,3 +112,31 @@ class PrintingActivity(Activity):
     def EndAttempt(self):
         self.attempt.time = time.time() - self.start_time
         self.attempt.Save()
+    def NextSymb(self):
+        if self.best_position == self.position:
+            cur_ch = self.activity_name[self.position]
+            cur_ch = cur_ch.lower()
+            next_time = time.time()
+            if cur_ch in self.attempt.key_stat_dict:
+                self.attempt.key_stat_dict[cur_ch].use_count += 1
+                self.attempt.key_stat_dict[cur_ch].sum_time += next_time - self.last_true_time
+            else:
+                new_stat = Attempt.KeyStat()
+                new_stat.value = cur_ch
+                new_stat.sum_time = next_time - self.last_true_time
+                new_stat.use_count = 1
+                self.attempt.key_stat_dict[cur_ch] = new_stat
+            self.last_true_time = next_time
+        self.position += 1
+        self.best_position = max(self.best_position, self.position)
+    def PrevSymb(self):
+        self.position -= 1
+    def FalseSymb(self):
+        cur_ch = self.activity_name[self.position]
+        if cur_ch in self.attempt.key_stat_dict:
+            self.attempt.key_stat_dict[cur_ch].sum_fails += 1
+        else:
+            new_stat = Attempt.KeyStat()
+            new_stat.value = cur_ch
+            new_stat.sum_fails = 1
+            self.attempt.key_stat_dict[cur_ch] = new_stat

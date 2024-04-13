@@ -21,6 +21,7 @@ class ChooseLibraryActivity(Activity):
         for lib_name in libs_names:
             self.AddLib(lib_name)
         add_lib_ref = Content("Add new Library", self.widget)
+
         def local_lambda():
             add_lib_activity = AddLibraryActivity(self.widget, self.key_listener, self)
             self.key_listener.AddActivity(add_lib_activity)
@@ -29,9 +30,6 @@ class ChooseLibraryActivity(Activity):
         add_lib_ref.SetAction(local_lambda)
         self.menu.AddItem(add_lib_ref)
         self.menu.current_item_number = 0 if LibraryManager.GetLibraryNum() == -1 else LibraryManager.GetLibraryNum()
-
-
-
 
     def Show(self):
         super().Show()
@@ -57,6 +55,7 @@ class ChooseLibraryActivity(Activity):
                 Log.print("lib seted to " + str(loc_ind + 0))
                 LibraryManager.SetLib(loc_ind)
                 LibraryManager.Save()
+                self.menu.Disable()
             return local_lambda
 
         lib_content.SetAction(local_lambda_c(len(self.menu.items)))

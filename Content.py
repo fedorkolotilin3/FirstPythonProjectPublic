@@ -72,19 +72,24 @@ class Content:
         self.color = color
 
     def FillTo(self, count, ch=" "):
-        Log.print("before: ", "")
-        Log.print(self.text_of_content + "|")
         ln = len(self.text_of_content)
-        Log.print(ln)
         if ln <= count:
             self.text_of_content += ch * (count - ln)
-        Log.print("after: ", "")
-        Log.print(self.text_of_content + "|")
-        Log.print(len(self.text_of_content))
+    def GetHeight(self):
+        self.ReCountGeometry()
+        return self.height
+    def ParentX(self):
+        if self.parent == None:
+            return 0
+        return self.parent.x
+    def ParentY(self):
+        if self.parent == None:
+            return 0
+        return self.parent.y
     def __copy__(self):
         # Log.print("copy runs")
         copy_res = Content(self.text_of_content, self.widget, self.x, self.y, self.parent)
-        copy_res.color = self.color
+        copy_res.SetColor(self.color)
         copy_res.start = self.start
         copy_res.max_width = self.max_width
         copy_res.last_width = self.last_width
