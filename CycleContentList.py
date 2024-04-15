@@ -13,49 +13,47 @@ class CycleContentList(ContentList):
         self.first_view_item = 0
         self.last_view_item = self.max_height - 1
 
-    def Activate(self):
-        super().Activate()
+    def activate(self):
+        super().activate()
 
-    def KeyIvent(self, key):
-        super().KeyIvent(key)
+    def key_event(self, key):
+        super().key_event(key)
 
-    def GetHeight(self):
+    def get_height(self):
         return self.max_height
 
-    def Disable(self):
-        super().Disable()
+    def disable(self):
+        super().disable()
 
-    def GoNext(self):
+    def go_next(self):
         if self.current_item_number == len(self.items) - 1:
             return
         if self.current_item_number == self.last_view_item:
             self.last_view_item += 1
             self.first_view_item += 1
-        super().GoNext()
+        super().go_next()
 
-    def GoPrevious(self):
+    def go_previous(self):
         if self.current_item_number == 0:
             return
         if self.current_item_number == self.first_view_item:
             self.last_view_item -= 1
             self.first_view_item -= 1
-        super().GoPrevious()
+        super().go_previous()
 
-    def GetItem(self, ind):
-        return super().GetItem(ind)
+    def get_item(self, ind):
+        return super().get_item(ind)
 
-    def AddItem(self, content, ind=-1, indent=0):
-        super().AddItem(content, ind)
+    def add_item(self, content, ind=-1, indent=0, split=0):
+        super().add_item(content, ind)
 
-    def PrintContent(self):
-        # Log.print("printing content")
+    def print_content(self):
         for i in range(self.first_view_item,
                        min(len(self.items), self.last_view_item + 1)):
-            # Log.print(f"printing itme: {i}")
             item = copy(self.items[i])
-            item.y = self.y + i - self.first_view_item + self.ParentY()
-            item.x += self.ParentX()
-            item.PrintContent()
+            item.y = self.y + i - self.first_view_item + self.parent_y()
+            item.x += self.parent_x()
+            item.print_content()
         self.widget.refresh()
 
     def __copy__(self):
@@ -63,5 +61,5 @@ class CycleContentList(ContentList):
         copy_res.max_height = self.max_height
         copy_res.first_view_item = self.first_view_item
         copy_res.last_view_item = self.last_view_item
-        copy_res.SetColor(self.color)
+        copy_res.set_color(self.color)
         return copy_res

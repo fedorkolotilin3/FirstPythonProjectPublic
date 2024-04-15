@@ -10,40 +10,39 @@ class ContentGroup(Content):
         self.items = []
         super().__init__(text_of_content, widget, x, y, parent)
 
-    def AddItem(self, content):
+    def add_item(self, content):
         self.items.append(content)
-    def PrintContent(self):
-        # Log.print(f"printing content: {len(self.items)}")
+
+    def print_content(self):
         for item in self.items:
             item_copy = copy(item)
-            item_copy.x += self.x + self.ParentX()
-            item_copy.y += self.y + self.ParentY()
-            item_copy.PrintContent()
+            item_copy.x += self.x + self.parent_x()
+            item_copy.y += self.y + self.parent_y()
+            item_copy.print_content()
 
-    def SetColor(self, color):
+    def set_color(self, color):
         self.color = color
-        # Log.print(type(self))
-        # Log.print("color_seted")
         for item in self.items:
-            item.SetColor(color)
+            item.set_color(color)
 
-    def ClearContent(self):
+    def clear_content(self):
         for item in self.items:
             item_copy = item
-            item_copy.x += self.x + self.ParentX()
-            item_copy.y += self.y + self.ParentY()
-            item_copy.ClearContent()
+            item_copy.x += self.x + self.parent_x()
+            item_copy.y += self.y + self.parent_y()
+            item_copy.clear_content()
+
     def __getitem__(self, item):
         return self.items[item]
 
     def __copy__(self):
         copy_res = self.__class__("", self.widget, self.x, self.y)
         copy_res.items = self.items
-        copy_res.SetColor(self.color)
+        copy_res.set_color(self.color)
         return copy_res
 
-    def GetHeight(self):
+    def get_height(self):
         height = 1
         for item in self.items:
-            height = max(height, item.GetHeight() + item.y)
+            height = max(height, item.get_height() + item.y)
         return height

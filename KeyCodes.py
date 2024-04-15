@@ -15,8 +15,8 @@ key_codes_new = {Keys.ESCAPE: [27, ""], Keys.ACTIVATE: [410, '\n'], Keys.UP: [2
                  Keys.DOWN: [258], Keys.RIGHT: [260], Keys.LEFT: [261], Keys.BACKSPACE: [263]}
 
 
-def GetKey(value):
+def get_key(value):
     for key in key_codes_new:
         if value in key_codes_new[key]:
-            return (True, key)
-    return (False, value)
+            return True, key
+    return False, value

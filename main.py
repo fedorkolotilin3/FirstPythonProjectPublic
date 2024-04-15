@@ -3,8 +3,9 @@ import curses
 import Attempt
 import KeyCodes
 import Log
-from KeyListner import KeyListner
+from KeyListener import KeyListener
 from StartActivity import StartActivity
+
 
 def main(stdscr):
     curses.init_pair(1, curses.COLOR_WHITE, curses.COLOR_BLACK)
@@ -12,11 +13,11 @@ def main(stdscr):
     curses.init_pair(3, curses.COLOR_BLACK, curses.COLOR_RED)
 
     stdscr.get_wch()
-    key_listener = KeyListner(stdscr)
+    key_listener = KeyListener(stdscr)
     start_activity = StartActivity(stdscr, key_listener)
-    start_activity.Show()
-    key_listener.AddActivity(start_activity)
-    key_listener.Activate()
+    start_activity.show()
+    key_listener.add_activity(start_activity)
+    key_listener.activate()
 
 
 if __name__ == '__main__':

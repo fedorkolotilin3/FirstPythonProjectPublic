@@ -13,84 +13,88 @@ class ScoreBoardActivity(Activity):
     def __init__(self, widget, key_listener, parent_activity=None, activity_name=""):
         super().__init__(widget, key_listener, parent_activity, activity_name)
 
-    def ItemCreation(self, attempt: Attempt):
+    def item_creation(self, attempt: Attempt):
         result: ContentGroup = ContentGroup("", self.widget)
         values = [str(i) for i in attempt.to_relative_list()]
         content = Content(values[3], self.widget, 0, 0)
-        content.FillTo(13)
-        result.AddItem(content)
+        content.fill_to(13)
+        result.add_item(content)
         content = Content(values[1], self.widget, 14, 0)
-        content.FillTo(16)
-        result.AddItem(content)
+        content.fill_to(16)
+        result.add_item(content)
         content = Content(values[0], self.widget, 31, 0)
-        content.FillTo(14)
-        result.AddItem(content)
+        content.fill_to(14)
+        result.add_item(content)
         content = Content(values[2], self.widget, 47, 0)
-        content.FillTo(10)
-        result.AddItem(content)
+        content.fill_to(10)
+        result.add_item(content)
+
         def local_lambda():
             Log.print("attempt activity launching")
             attempt_activity = AttemptFullStatisticActivity(self.widget, self.key_listener, self, attempt=attempt)
-            self.key_listener.AddActivity(attempt_activity)
-            self.Escape()
-            attempt_activity.Show()
-        result.SetAction(local_lambda)
+            self.key_listener.add_activity(attempt_activity)
+            self.escape()
+            attempt_activity.show()
+        result.set_action(local_lambda)
         return result
-    def OnCreate(self):
-        super().OnCreate()
+
+    def on_create(self):
+        super().on_create()
         title_string = "Библиотека    Число символов   Ошибок/cимвол   Время/cимвол"
         self.table_title = Content(title_string, self.widget, 0, 2)
         self.menu = ContentList("", self.widget, 0, 3)
         # self.menu = CycleContentList("", self.widget, 0, 3, 10)
         attempt_menu = CycleContentList("", self.widget, 0, 0, 7, parent=self.menu)
-        attempt_menu.SetAction(attempt_menu.Activate)
+        attempt_menu.set_action(attempt_menu.activate)
 
-        self.attempts: list[Attempt] = Attempt.LoadAttempts()
+        self.attempts: list[Attempt] = Attempt.load_attempts()
         for attempt in reversed(self.attempts):
-            attempt_menu.AddItem(self.ItemCreation(attempt))
+            attempt_menu.add_item(self.item_creation(attempt))
 
         all_time_stat = CycleContentList("", self.widget, 0, 0, 5, parent=self.menu)
-        libraries = LibraryManager.GetLibraries()
+        libraries = LibraryManager.get_libraries()
         for lib in libraries:
             lib_content = Content(lib, self.widget)
 
             def local_lambda_w(lib):
                 def local_lambda():
                     summ_attempt = Attempt()
-                    for _attempt in Attempt.LoadAttempts():
+                    for _attempt in Attempt.load_attempts():
                         if _attempt.library == lib:
                             summ_attempt += _attempt
                     all_time_lib_activity = AttemptFullStatisticActivity(self.widget, self.key_listener, self,
                                                                          "", attempt=summ_attempt)
-                    self.key_listener.AddActivity(all_time_lib_activity)
-                    self.Escape()
-                    all_time_lib_activity.Show()
+                    self.key_listener.add_activity(all_time_lib_activity)
+                    self.escape()
+                    all_time_lib_activity.show()
                 return local_lambda
-            lib_content.SetAction(local_lambda_w(lib))
-            all_time_stat.AddItem(lib_content)
-        all_time_stat.SetAction(all_time_stat.Activate)
+            lib_content.set_action(local_lambda_w(lib))
+            all_time_stat.add_item(lib_content)
+        all_time_stat.set_action(all_time_stat.activate)
 
-        self.menu.AddItem(attempt_menu, split=1)
-        self.menu.AddItem(all_time_stat)
+        self.menu.add_item(attempt_menu, split=1)
+        self.menu.add_item(all_time_stat)
 
-    def ActivateSign(self):
-        self.menu.Activate()
+    def activate_sign(self):
+        self.menu.activate()
 
-    def Show(self):
-        super().Show()
-        self.table_title.PrintContent()
+    def show(self):
+        super().show()
+        self.table_title.print_content()
         if self.menu.items:
-            self.menu.PrintContent()
-            self.menu.Activate()
-    def KeyEvent(self, pair):
+            self.menu.print_content()
+            self.menu.activate()
+
+    def key_event(self, pair):
         flag, key = pair
         if flag:
             if self.menu.is_active:
-                self.menu.KeyIvent(key)
+                self.menu.key_event(key)
             else:
-                super().KeyEvent(pair)
-    def Escape(self):
+                super().key_event(pair)
+
+    def escape(self):
         if self.menu.is_active:
-            self.menu.Disable()
-        super().Escape()
+            self.menu.disable()
+        super().escape()
         # super().ReturnToParentActivity()

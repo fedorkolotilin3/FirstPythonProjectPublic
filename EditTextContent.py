@@ -6,23 +6,23 @@ class EditTextContent(Content):
     def __init__(self, text_of_content, widget, x=0, y=0, parent=None):
         super().__init__(text_of_content, widget, x, y, parent)
 
-    def Action(self):
+    def action(self):
         super().Action()
 
-    def PrintContent(self):
-        super().PrintContent()
+    def print_content(self):
+        super().print_content()
 
-    def SetAction(self, action):
-        super().SetAction(action)
+    def set_action(self, action):
+        super().set_action(action)
 
-    def Delete(self):
+    def delete(self):
         if len(self.text_of_content) > 0:
-            self.ClearContent()
+            self.clear_content()
             self.text_of_content = self.text_of_content[:-1]
-            self.ReCountGeometry()
-        self.PrintContent()
+            self.re_count_geometry()
+        self.print_content()
 
-    def Add(self, string):
+    def add(self, string):
         self.text_of_content += string
-        self.ReCountGeometry()
-        self.PrintContent()
+        self.re_count_geometry()
+        self.print_content()

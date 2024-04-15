@@ -8,56 +8,60 @@ import json
 
 
 class ChooseLibraryActivity(Activity):
-    menu = None
     def __init__(self, widget, key_listener, parent_activity=None, activity_name=""):
         self.activity_name = "Here you can choose your library, from which words will be select"
         super().__init__(widget, key_listener, parent_activity, activity_name=self.activity_name)
 
-    def OnCreate(self):
-        super().OnCreate()
+    def on_create(self):
+        super().on_create()
         self.menu = ContentList("choose library menu", self.widget, 0, 3)
         Log.print(self.menu.text_of_content)
-        libs_names = LibraryManager.GetLibraries()
+        libs_names = LibraryManager.get_libraries()
         for lib_name in libs_names:
-            self.AddLib(lib_name)
+            self.add_lib(lib_name)
         add_lib_ref = Content("Add new Library", self.widget)
 
         def local_lambda():
             add_lib_activity = AddLibraryActivity(self.widget, self.key_listener, self)
-            self.key_listener.AddActivity(add_lib_activity)
-            self.Escape()
-            add_lib_activity.Show()
-        add_lib_ref.SetAction(local_lambda)
-        self.menu.AddItem(add_lib_ref)
-        self.menu.current_item_number = 0 if LibraryManager.GetLibraryNum() == -1 else LibraryManager.GetLibraryNum()
+            self.key_listener.add_activity(add_lib_activity)
+            self.escape()
+            add_lib_activity.show()
+        add_lib_ref.set_action(local_lambda)
+        self.menu.add_item(add_lib_ref)
+        self.menu.current_item_number = 0 if LibraryManager.get_library_num() == -1 else LibraryManager.get_library_num()
 
-    def Show(self):
-        super().Show()
-        self.menu.Activate()
-        self.menu.PrintContent()
-    def ActivateSign(self):
-        self.menu.Activate()
-    def KeyEvent(self, pair):
+    def show(self):
+        super().show()
+        self.menu.activate()
+        self.menu.print_content()
+
+    def activate_sign(self):
+        self.menu.activate()
+
+    def key_event(self, pair):
         flag, key = pair
         if flag:
             if self.menu.is_active:
-                self.menu.KeyIvent(key)
+                self.menu.key_event(key)
             else:
-                super().KeyEvent(pair)
-    def Escape(self):
-        if (self.menu.is_active):
-            self.menu.Disable()
-        super().Escape()
-    def AddLib(self, lib_name, position=-1):
+                super().key_event(pair)
+
+    def escape(self):
+        if self.menu.is_active:
+            self.menu.disable()
+        super().escape()
+
+    def add_lib(self, lib_name, position=-1):
         lib_content = Content(lib_name, self.widget)
+
         def local_lambda_c(loc_ind):
             def local_lambda():
                 Log.print("lib seted to " + str(loc_ind + 0))
-                LibraryManager.SetLib(loc_ind)
-                LibraryManager.Save()
-                self.menu.Disable()
+                LibraryManager.set_lib(loc_ind)
+                LibraryManager.save()
+                self.menu.disable()
             return local_lambda
+        lib_content.set_action(local_lambda_c(len(self.menu.items) + position + 1))
+        self.menu.add_item(lib_content, position)
 
-        lib_content.SetAction(local_lambda_c(len(self.menu.items)))
-        self.menu.AddItem(lib_content, position)
 

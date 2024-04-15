@@ -15,70 +15,72 @@ class ContentList (ContentGroup):
         self.splits = []
         super(ContentList, self).__init__(text_of_content, widget, x, y, parent)
 
-    def Activate(self):
+    def activate(self):
         self.is_active = True
-        if self.parent != None:
+        if self.parent is not None:
             self.parent.active_child = self
-        if self.active_child != None:
-            self.active_child.Activate()
+        if self.active_child is not None:
+            self.active_child.activate()
         else:
-            self.items[self.current_item_number].SetColor(curses.color_pair(2))
-            self.PrintContent()
-    def KeyIvent(self, key):
+            self.items[self.current_item_number].set_color(curses.color_pair(2))
+            self.print_content()
+
+    def key_event(self, key):
         if self.active_child is None:
             if key == KeyCodes.Keys.ESCAPE:
-                self.Disable()
+                self.disable()
             if key == KeyCodes.Keys.ACTIVATE:
-                self.items[self.current_item_number].SetColor(curses.color_pair(1))
-                self.PrintContent()
-                self.items[self.current_item_number].Action()
+                self.items[self.current_item_number].set_color(curses.color_pair(1))
+                self.print_content()
+                self.items[self.current_item_number].action()
             if key == KeyCodes.Keys.UP:
-                self.GoPrevious()
+                self.go_previous()
             if key == KeyCodes.Keys.DOWN:
-                self.GoNext()
+                self.go_next()
         else:
-            self.active_child.KeyIvent(key)
-    def Disable(self):
-        self.is_active = False
-        if self.parent != None:
-            self.parent.active_child = None
-            self.parent.items[self.parent.current_item_number].SetColor(curses.color_pair(2))
-            self.parent.PrintContent()
-        else:
-            self.items[self.current_item_number].SetColor(curses.color_pair(1))
-            self.PrintContent()
-        # Log.print(self.text_of_content + " printed")
+            self.active_child.key_event(key)
 
-    def GoNext(self):
-        self.items[self.current_item_number].SetColor(curses.color_pair(1))
+    def disable(self):
+        self.is_active = False
+        if self.parent is not None:
+            self.parent.active_child = None
+            self.parent.items[self.parent.current_item_number].set_color(curses.color_pair(2))
+            self.parent.print_content()
+        else:
+            self.items[self.current_item_number].set_color(curses.color_pair(1))
+            self.print_content()
+
+    def go_next(self):
+        self.items[self.current_item_number].set_color(curses.color_pair(1))
         self.current_item_number += 1
         self.current_item_number %= len(self.items)
-        self.items[self.current_item_number].SetColor(curses.color_pair(2))
-        self.PrintContent()
-    def GoPrevious(self):
-        self.items[self.current_item_number].SetColor(curses.color_pair(1))
+        self.items[self.current_item_number].set_color(curses.color_pair(2))
+        self.print_content()
+
+    def go_previous(self):
+        self.items[self.current_item_number].set_color(curses.color_pair(1))
         self.current_item_number -= 1
         self.current_item_number %= len(self.items)
-        self.items[self.current_item_number].SetColor(curses.color_pair(2))
-        self.PrintContent()
-    def GetItem(self, ind):
+        self.items[self.current_item_number].set_color(curses.color_pair(2))
+        self.print_content()
+
+    def get_item(self, ind):
         return self.items[ind]
-    def AddItem(self, content, ind = -1, indent=0, split=0):
+
+    def add_item(self, content, ind=-1, indent=0, split=0):
         ind = (len(self.items) + ind) % len(self.items) + 1 if len(self.items) else 0
-        if type(content) == str:
+        if type(content) is str:
             created_content = Content(content, self.widget, 0, 0)
             content = created_content
         height_of_prev = 0
         for i in range(0, ind):
-            height_of_prev += self.items[i].GetHeight() + self.splits[i]
+            height_of_prev += self.items[i].get_height() + self.splits[i]
         content.y = height_of_prev
         content.x = indent
         self.items.insert(ind, content)
         self.splits.insert(ind, split)
         for i in range(ind + 1, len(self.items)):
             self.items[i].y += 1
-        # self.current_item_number = 0
-        # self.PrintContent()
 
     def __copy__(self):
         copy_res = self.__class__("", self.widget, self.x, self.y)
@@ -86,5 +88,5 @@ class ContentList (ContentGroup):
         copy_res.is_active = self.is_active
         copy_res.items = self.items
         copy_res.current_item_number = self.current_item_number
-        copy_res.SetColor(self.color)
+        copy_res.set_color(self.color)
         return copy_res
