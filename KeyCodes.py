@@ -1,4 +1,6 @@
 from enum import Enum
+
+
 class Keys(Enum):
     ESCAPE = 1
     DOWN = 2

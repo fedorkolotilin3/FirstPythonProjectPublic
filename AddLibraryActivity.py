@@ -6,10 +6,14 @@ import Log
 from Activity import Activity
 from ContentList import ContentList
 from EditTextContent import EditTextContent
+from KeyListener import KeyListener
 
 
 class AddLibraryActivity(Activity):
-    def __init__(self, widget, key_listener, parent_activity=None, activity_name=""):
+
+    def __init__(self, widget: curses.window, key_listener: KeyListener, parent_activity: Activity = None,
+                 activity_name: str = ""):
+        self.edit_text: EditTextContent = None
         self.activity_name = ("Введите путь до папки с библиотекой\n "
                               "Формат папки: Папка без вложенных папок с .txt файлам, содержащими примеры для ввода")
         super().__init__(widget, key_listener, parent_activity, activity_name=self.activity_name)

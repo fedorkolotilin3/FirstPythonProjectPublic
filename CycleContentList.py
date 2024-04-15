@@ -7,7 +7,7 @@ from ContentList import ContentList
 
 
 class CycleContentList(ContentList):
-    def __init__(self, text_of_content, widget, x, y, max_height=10, parent=None):
+    def __init__(self, text_of_content: str, widget: curses.window, x: int = 0, y: int = 0, max_height=10, parent: Content = None):
         super().__init__(text_of_content, widget, x, y, parent)
         self.max_height = max_height
         self.first_view_item = 0
@@ -44,7 +44,7 @@ class CycleContentList(ContentList):
     def get_item(self, ind):
         return super().get_item(ind)
 
-    def add_item(self, content, ind=-1, indent=0, split=0):
+    def add_item(self, content: Content, ind=-1, indent=0, split=0):
         super().add_item(content, ind)
 
     def print_content(self):

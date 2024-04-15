@@ -1,6 +1,7 @@
 import curses
 
 from Content import Content
+from KeyListener import KeyListener
 import KeyCodes
 import Log
 from ContentList import ContentList
@@ -8,11 +9,13 @@ import typing
 
 
 class Activity:
-    def __init__(self, widget, key_listener, parent_activity=None, activity_name=""):
-        self.widget = widget
-        self.key_listener = key_listener
-        self.parent_activity = parent_activity
-        self.activity_name = activity_name
+    def __init__(self, widget: curses.window, key_listener: KeyListener, parent_activity: 'Activity' = None,
+                 activity_name: str = ""):
+        self.name_content: Content = None
+        self.widget: curses.window = widget
+        self.key_listener: KeyListener = key_listener
+        self.parent_activity: Activity = parent_activity
+        self.activity_name: str = activity_name
         self.on_create()
 
     def print_help(self):

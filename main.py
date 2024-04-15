@@ -23,6 +23,6 @@ def main(stdscr):
 if __name__ == '__main__':
     try:
         curses.wrapper(main)
-    except [Exception]:
-        print(Exception)
+    except BaseException as e:
+        print(e.args)
         Log.close()

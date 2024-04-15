@@ -1,19 +1,20 @@
+from __future__ import annotations
+
 import json
 import typing
-
 import LibraryManager
 import Log
 
 
 class KeyStat:
     def __init__(self):
-        self.value = ""
-        self.sum_fails = 0
-        self.sum_time = 0.0
-        self.use_count = 0
+        self.value: int = ""
+        self.sum_fails: int = 0
+        self.sum_time: float = 0.0
+        self.use_count: int = 0
 
-    def __add__(self, other):
-        result = KeyStat()
+    def __add__(self, other: KeyStat):
+        result: KeyStat = KeyStat()
         result.value = self.value
         result.sum_fails = self.sum_fails + other.sum_fails
         result.sum_time = self.sum_time + other.sum_time
@@ -24,10 +25,8 @@ class KeyStat:
         return self.__dict__
 
     @staticmethod
-    def from_dict(dict_o):
-        # Log.print(dict_o)
-        # Log.print(type(dict_o))
-        ans = KeyStat()
+    def from_dict(dict_o: dict):
+        ans: KeyStat = KeyStat()
         for key, value in dict_o.items():
             setattr(ans, key, value)
         return ans
@@ -35,13 +34,12 @@ class KeyStat:
 
 class Attempt:
     def __init__(self):
-        self.ind = 0
-        self.errors_count = 0
-        self.chars_count = 0
-        self.time = 0
-        # self.library = LibraryManager.GetLibrary()
-        self.library = ""
-        self.lib_counter = 0
+        self.ind: int = 0
+        self.errors_count: int = 0
+        self.chars_count: int = 0
+        self.time: int = 0
+        self.library: str = ""
+        self.lib_counter: int = 0
         self.key_stat_dict: dict[KeyStat] = {}
 
     def to_json_list(self):
@@ -83,8 +81,8 @@ class Attempt:
     def load_attempts() -> list:
         with open(LibraryManager.path_to_dir + "/" + "attempts.json", 'r+') as json_file:
             file_values = json.load(json_file)
-            n = file_values["counter"]
-            ans = []
+            n: int = file_values["counter"]
+            ans: list = []
             if n == 0:
                 return ans
             for i in range(n):
@@ -97,7 +95,7 @@ class Attempt:
     def load_attempt(index: int):
         with open(LibraryManager.path_to_dir + "/" + "attempts.json", 'r+') as json_file:
             file_values = json.load(json_file)
-            result = Attempt.from_list(file_values["attempt_list"][index])
+            result: Attempt = Attempt.from_list(file_values["attempt_list"][index])
             result.ind = index
             return result
 
@@ -105,8 +103,8 @@ class Attempt:
         return (f'{self.library} {self.chars_count} '
                 f'{self.errors_count} {round(self.time, 4)}')
 
-    def __add__(self, other):
-        sum_res = Attempt()
+    def __add__(self, other: Attempt):
+        sum_res: Attempt = Attempt()
         sum_res.time = self.time + other.time
         sum_res.errors_count = self.errors_count + other.errors_count
         sum_res.chars_count = self.chars_count + other.chars_count

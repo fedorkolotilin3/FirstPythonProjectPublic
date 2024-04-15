@@ -8,11 +8,10 @@ from ContentGroup import ContentGroup
 
 
 class ContentList (ContentGroup):
-    is_active = False
-    current_item_number = 0
-
-    def __init__(self, text_of_content, widget, x, y, parent=None):
-        self.splits = []
+    def __init__(self, text_of_content: str, widget: curses.window, x: int = 0, y: int = 0, parent: Content = None):
+        self.is_active: bool = False
+        self.current_item_number: int = 0
+        self.splits: list[int] = []
         super(ContentList, self).__init__(text_of_content, widget, x, y, parent)
 
     def activate(self):
@@ -64,10 +63,10 @@ class ContentList (ContentGroup):
         self.items[self.current_item_number].set_color(curses.color_pair(2))
         self.print_content()
 
-    def get_item(self, ind):
+    def get_item(self, ind: int):
         return self.items[ind]
 
-    def add_item(self, content, ind=-1, indent=0, split=0):
+    def add_item(self, content: Content, ind=-1, indent=0, split=0):
         ind = (len(self.items) + ind) % len(self.items) + 1 if len(self.items) else 0
         if type(content) is str:
             created_content = Content(content, self.widget, 0, 0)
@@ -84,7 +83,6 @@ class ContentList (ContentGroup):
 
     def __copy__(self):
         copy_res = self.__class__("", self.widget, self.x, self.y)
-        # Log.print(type(copy_res))
         copy_res.is_active = self.is_active
         copy_res.items = self.items
         copy_res.current_item_number = self.current_item_number

@@ -13,14 +13,15 @@ from EditTextContent import EditTextContent
 
 
 class PrintingActivity(Activity):
-    def __init__(self, widget, key_listener, parent_activity=None, activity_name=""):
-        self.position = 0
-        self.best_position = 0
-        self.activity_name = LibraryManager.get_text()
-        self.error_counter = Content("errors count: 0", widget, 0, 14)
-        self.start_time = time.time();
-        self.last_true_time = self.start_time
-        self.attempt = Attempt.Attempt()
+    def __init__(self, widget: curses.window, key_listener: KeyListener, parent_activity: 'Activity' = None,
+                 activity_name: str = ""):
+        self.position: int = 0
+        self.best_position: int = 0
+        self.activity_name: str = LibraryManager.get_text()
+        self.error_counter: int = Content("errors count: 0", widget, 0, 14)
+        self.start_time: int = time.time();
+        self.last_true_time: int = self.start_time
+        self.attempt: Attempt = Attempt.Attempt()
         super().__init__(widget, key_listener, parent_activity, self.activity_name)
 
     def on_create(self):
@@ -41,12 +42,12 @@ class PrintingActivity(Activity):
                 self.widget.move(y, x)
                 self.widget.refresh()
                 time.sleep(0.1)
-        self.timer_thread_active = True
-        self.timer = Content("time: ", self.widget, 0, 10)
-        self.timer_thread = threading.Thread(target=calculate_timer)
+        self.timer_thread_active: bool = True
+        self.timer: Content = Content("time: ", self.widget, 0, 10)
+        self.timer_thread: threading.Thread = threading.Thread(target=calculate_timer)
         self.timer_thread.daemon = True
-        self.edit_text = EditTextContent("", self.widget, 0, 3)
-        self.false_text = EditTextContent("", self.widget, 0, 3)
+        self.edit_text: EditTextContent = EditTextContent("", self.widget, 0, 3)
+        self.false_text: EditTextContent = EditTextContent("", self.widget, 0, 3)
         self.false_text.color = curses.color_pair(3)
 
         def local_lambda():

@@ -1,11 +1,14 @@
+import curses
+
 import KeyCodes
 import Log
+from Activity import Activity
 
 
 class KeyListener:
-    widget = None
-    listening = False
-    listening_activities = []
+    widget: curses.window = None
+    listening: bool = False
+    listening_activities: list[Activity] = []
 
     def __init__(self, widget):
         self.raw_key = None

@@ -1,3 +1,4 @@
+import curses
 import time
 
 import Log
@@ -6,10 +7,17 @@ from Attempt import Attempt, KeyStat
 from Content import Content
 from ContentGroup import ContentGroup
 from CycleContentList import CycleContentList
+from KeyListener import KeyListener
 
 
 class AttemptFullStatisticActivity(Activity):
-    def __init__(self, widget, key_listener, parent_activity=None, activity_name="", attempt=Attempt()):
+
+    def __init__(self, widget: curses.window, key_listener: KeyListener, parent_activity: Activity = None,
+                 activity_name: str = "", attempt: Attempt = Attempt()):
+        self.key_stat_list: CycleContentList = None
+        self.list_header: Content = None
+        self.stat_values: ContentGroup = None
+        self.title_content: Content = None
         self.attempt = attempt
         activity_name = "Detail statistic"
         super().__init__(widget, key_listener, parent_activity, activity_name)
@@ -35,13 +43,10 @@ class AttemptFullStatisticActivity(Activity):
         list_header_string = "Символ      Число ошибок    Число встреч    Среднее время    Среднее число ошибок"
         self.list_header = Content(list_header_string, self.widget, 0, 5)
         self.key_stat_list = CycleContentList("", self.widget, 0, 6, 7)
-        # Log.print(type(self.attempt.key_stat_dict))
-        # Log.print(self.attempt.key_stat_dict)
         key_arr = [key for key in self.attempt.key_stat_dict]
         key_arr.sort()
         for key in key_arr:
             key_stat: KeyStat = self.attempt.key_stat_dict[key]
-            # Log.print(type(key_stat))
             stat_values = ContentGroup("", self.widget, 0, 3)
             content = Content("|" + str(key_stat.value) + "|", self.widget, 0, 0)
             content.fill_to(13)

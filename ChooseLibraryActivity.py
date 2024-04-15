@@ -1,3 +1,5 @@
+import curses
+
 import LibraryManager
 import Log
 from Activity import Activity
@@ -6,9 +8,14 @@ from Content import Content
 from ContentList import ContentList
 import json
 
+from KeyListener import KeyListener
+
 
 class ChooseLibraryActivity(Activity):
-    def __init__(self, widget, key_listener, parent_activity=None, activity_name=""):
+    def __init__(self, widget: curses.window, key_listener: KeyListener, parent_activity: Activity = None,
+                 activity_name: str = ""):
+
+        self.menu: ContentList = None
         self.activity_name = "Here you can choose your library, from which words will be select"
         super().__init__(widget, key_listener, parent_activity, activity_name=self.activity_name)
 
