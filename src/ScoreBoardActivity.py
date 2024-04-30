@@ -33,7 +33,7 @@ class ScoreBoardActivity(Activity):
         result.add_item(content)
 
         def local_lambda():
-            Log.print("attempt activity launching")
+            # Log.print("attempt activity launching")
             attempt_activity = AttemptFullStatisticActivity(self.widget, self.key_listener, self, attempt=attempt)
             self.key_listener.add_activity(attempt_activity)
             self.escape()

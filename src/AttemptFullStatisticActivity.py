@@ -70,7 +70,7 @@ class AttemptFullStatisticActivity(Activity):
         self.key_stat_list.activate()
 
     def show(self):
-        Log.print("attempt activity show")
+        # Log.print("attempt activity show")
         super().show()
         self.title_content.print_content()
         self.stat_values.print_content()

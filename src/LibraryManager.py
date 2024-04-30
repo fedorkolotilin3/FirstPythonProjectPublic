@@ -54,7 +54,7 @@ def add_library(dir_path):
     list_dir = os.listdir(dir_path)
     for file in list_dir:
         if not file.endswith("txt"):
-            Log.print("LM-er error" + file)
+            # Log.print("LM-er error" + file)
             return "Ошибка, укажиите КОРРЕКТНУЮ дирректорию", ""
 
     lib_content = ""
@@ -89,7 +89,7 @@ def generate_texts():
         for j in range(words_count):
             text += words[i + j] + (" " if j != words_count - 1 else '')
         texts.append(text)
-    Log.print(texts)
+    # Log.print(texts)
 
 
 def get_data_from_file(file):

@@ -23,6 +23,9 @@ class PrintingActivity(Activity):
         self.last_true_time: int = self.start_time
         self.attempt: Attempt = Attempt.Attempt()
         super().__init__(widget, key_listener, parent_activity, self.activity_name)
+    def init_attempt(self):
+        for ch in self.activity_name:
+            self.attempt
 
     def on_create(self):
         super().on_create()
@@ -51,8 +54,8 @@ class PrintingActivity(Activity):
         self.false_text.color = curses.color_pair(3)
 
         def local_lambda():
-            Log.print("aim:\n" + self.activity_name)
-            Log.print("result:\n" + self.edit_text.text_of_content)
+            # Log.print("aim:\n" + self.activity_name)
+            # Log.print("result:\n" + self.edit_text.text_of_content)
             if self.activity_name == self.edit_text.text_of_content:
                 self.end_attempt()
                 self.escape()
@@ -61,10 +64,10 @@ class PrintingActivity(Activity):
         self.edit_text.set_action(local_lambda)
 
     def key_event(self, pair):
-        Log.print("ed", " ")
-        Log.print(self.edit_text)
-        Log.print("fal", " ")
-        Log.print(self.false_text)
+        # Log.print("ed", " ")
+        # Log.print(self.edit_text)
+        # Log.print("fal", " ")
+        # Log.print(self.false_text)
         fl, value = pair
         if fl:
             super().key_event(pair)
@@ -138,6 +141,7 @@ class PrintingActivity(Activity):
 
     def false_symb(self):
         cur_ch = self.activity_name[self.position]
+        cur_ch = cur_ch.lower()
         if cur_ch in self.attempt.key_stat_dict:
             self.attempt.key_stat_dict[cur_ch].sum_fails += 1
         else:

@@ -22,7 +22,7 @@ class ChooseLibraryActivity(Activity):
     def on_create(self):
         super().on_create()
         self.menu = ContentList("choose library menu", self.widget, 0, 3)
-        Log.print(self.menu.text_of_content)
+        # Log.print(self.menu.text_of_content)
         libs_names = LibraryManager.get_libraries()
         for lib_name in libs_names:
             self.add_lib(lib_name)
@@ -63,7 +63,7 @@ class ChooseLibraryActivity(Activity):
 
         def local_lambda_c(loc_ind):
             def local_lambda():
-                Log.print("lib seted to " + str(loc_ind + 0))
+                # Log.print("lib seted to " + str(loc_ind + 0))
                 LibraryManager.set_lib(loc_ind)
                 LibraryManager.save()
                 self.menu.disable()

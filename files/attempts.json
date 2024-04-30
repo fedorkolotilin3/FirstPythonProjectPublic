@@ -1,2194 +1,1108 @@
 {
-    "counter": 13,
+    "counter": 7,
     "attempt_list": [
         [
-            5,
-            100,
-            36.8616,
+            46,
+            106,
+            96.0742,
             "EnEasy",
             {
+                "f": {
+                    "value": "f",
+                    "sum_fails": 0,
+                    "sum_time": 2.6423072814941406,
+                    "use_count": 1
+                },
+                "a": {
+                    "value": "a",
+                    "sum_fails": 1,
+                    "sum_time": 8.661226987838745,
+                    "use_count": 9
+                },
+                "s": {
+                    "value": "s",
+                    "sum_fails": 3,
+                    "sum_time": 5.431851625442505,
+                    "use_count": 9
+                },
                 "t": {
                     "value": "t",
                     "sum_fails": 0,
-                    "sum_time": 4.877511739730835,
-                    "use_count": 13
-                },
-                "h": {
-                    "value": "h",
-                    "sum_fails": 0,
-                    "sum_time": 0.981940507888794,
+                    "sum_time": 6.445324182510376,
                     "use_count": 6
                 },
                 "e": {
                     "value": "e",
-                    "sum_fails": 1,
-                    "sum_time": 2.5304906368255615,
-                    "use_count": 8
-                },
-                " ": {
-                    "value": " ",
                     "sum_fails": 0,
-                    "sum_time": 5.266050815582275,
-                    "use_count": 19
-                },
-                "f": {
-                    "value": "f",
-                    "sum_fails": 0,
-                    "sum_time": 0.3614044189453125,
-                    "use_count": 2
-                },
-                "a": {
-                    "value": "a",
-                    "sum_fails": 0,
-                    "sum_time": 0.9833118915557861,
-                    "use_count": 5
-                },
-                "c": {
-                    "value": "c",
-                    "sum_fails": 0,
-                    "sum_time": 0.37947678565979004,
-                    "use_count": 1
-                },
-                ".": {
-                    "value": ".",
-                    "sum_fails": 0,
-                    "sum_time": 0.11997699737548828,
-                    "use_count": 1
-                },
-                "'": {
-                    "value": "'",
-                    "sum_fails": 0,
-                    "sum_time": 2.8692872524261475,
-                    "use_count": 5
-                },
-                "i": {
-                    "value": "i",
-                    "sum_fails": 0,
-                    "sum_time": 2.7232165336608887,
-                    "use_count": 3
-                },
-                "l": {
-                    "value": "l",
-                    "sum_fails": 0,
-                    "sum_time": 1.8627221584320068,
-                    "use_count": 3
-                },
-                "p": {
-                    "value": "p",
-                    "sum_fails": 0,
-                    "sum_time": 0.4181356430053711,
-                    "use_count": 2
-                },
-                "u": {
-                    "value": "u",
-                    "sum_fails": 0,
-                    "sum_time": 0.31902217864990234,
-                    "use_count": 4
-                },
-                "s": {
-                    "value": "s",
-                    "sum_fails": 0,
-                    "sum_time": 2.293450355529785,
-                    "use_count": 6
-                },
-                "o": {
-                    "value": "o",
-                    "sum_fails": 0,
-                    "sum_time": 2.707040786743164,
-                    "use_count": 8
-                },
-                ",": {
-                    "value": ",",
-                    "sum_fails": 3,
-                    "sum_time": 4.5695836544036865,
-                    "use_count": 3
-                },
-                "d": {
-                    "value": "d",
-                    "sum_fails": 0,
-                    "sum_time": 1.5767056941986084,
-                    "use_count": 5
-                },
-                "r": {
-                    "value": "r",
-                    "sum_fails": 0,
-                    "sum_time": 0.19017553329467773,
-                    "use_count": 2
-                },
-                "n": {
-                    "value": "n",
-                    "sum_fails": 0,
-                    "sum_time": 0.5979177951812744,
-                    "use_count": 2
-                },
-                "y": {
-                    "value": "y",
-                    "sum_fails": 0,
-                    "sum_time": 0.3938889503479004,
-                    "use_count": 1
-                },
-                "b": {
-                    "value": "b",
-                    "sum_fails": 0,
-                    "sum_time": 0.3256962299346924,
-                    "use_count": 1
-                }
-            }
-        ],
-        [
-            4,
-            101,
-            32.2861,
-            "EnEasy",
-            {
-                "w": {
-                    "value": "w",
-                    "sum_fails": 0,
-                    "sum_time": 2.8771157264709473,
-                    "use_count": 4
-                },
-                "a": {
-                    "value": "a",
-                    "sum_fails": 0,
-                    "sum_time": 1.7521507740020752,
-                    "use_count": 7
-                },
-                "s": {
-                    "value": "s",
-                    "sum_fails": 0,
-                    "sum_time": 1.653752326965332,
-                    "use_count": 6
-                },
-                " ": {
-                    "value": " ",
-                    "sum_fails": 0,
-                    "sum_time": 4.848965644836426,
-                    "use_count": 19
-                },
-                "n": {
-                    "value": "n",
-                    "sum_fails": 0,
-                    "sum_time": 1.3535315990447998,
-                    "use_count": 8
-                },
-                "o": {
-                    "value": "o",
-                    "sum_fails": 0,
-                    "sum_time": 2.5513534545898438,
+                    "sum_time": 1.5299453735351562,
                     "use_count": 10
                 },
-                "b": {
-                    "value": "b",
-                    "sum_fails": 0,
-                    "sum_time": 0.22853779792785645,
-                    "use_count": 1
-                },
-                "u": {
-                    "value": "u",
-                    "sum_fails": 0,
-                    "sum_time": 0.5049357414245605,
-                    "use_count": 4
-                },
-                "t": {
-                    "value": "t",
-                    "sum_fails": 0,
-                    "sum_time": 1.9986286163330078,
-                    "use_count": 7
-                },
-                "f": {
-                    "value": "f",
-                    "sum_fails": 0,
-                    "sum_time": 1.2319746017456055,
-                    "use_count": 3
-                },
-                "e": {
-                    "value": "e",
-                    "sum_fails": 0,
-                    "sum_time": 1.6372575759887695,
-                    "use_count": 5
-                },
-                "h": {
-                    "value": "h",
-                    "sum_fails": 0,
-                    "sum_time": 1.3965156078338623,
-                    "use_count": 6
-                },
-                "i": {
-                    "value": "i",
-                    "sum_fails": 0,
-                    "sum_time": 0.9819998741149902,
-                    "use_count": 5
-                },
-                "g": {
-                    "value": "g",
-                    "sum_fails": 1,
-                    "sum_time": 2.225527286529541,
-                    "use_count": 4
-                },
-                ",": {
-                    "value": ",",
-                    "sum_fails": 2,
-                    "sum_time": 3.0798490047454834,
-                    "use_count": 1
-                },
-                "d": {
-                    "value": "d",
-                    "sum_fails": 0,
-                    "sum_time": 0.8515760898590088,
-                    "use_count": 3
-                },
                 "r": {
                     "value": "r",
                     "sum_fails": 0,
-                    "sum_time": 0.5798232555389404,
-                    "use_count": 2
-                },
-                "k": {
-                    "value": "k",
-                    "sum_fails": 0,
-                    "sum_time": 0.5188565254211426,
-                    "use_count": 1
-                },
-                "p": {
-                    "value": "p",
-                    "sum_fails": 0,
-                    "sum_time": 0.5486395359039307,
-                    "use_count": 1
-                },
-                "l": {
-                    "value": "l",
-                    "sum_fails": 0,
-                    "sum_time": 0.36929821968078613,
-                    "use_count": 1
-                },
-                "y": {
-                    "value": "y",
-                    "sum_fails": 0,
-                    "sum_time": 0.07444071769714355,
-                    "use_count": 1
-                },
-                ":": {
-                    "value": ":",
-                    "sum_fails": 0,
-                    "sum_time": 0.5554633140563965,
-                    "use_count": 1
-                },
-                "c": {
-                    "value": "c",
-                    "sum_fails": 0,
-                    "sum_time": 0.21701526641845703,
-                    "use_count": 1
-                }
-            }
-        ],
-        [
-            10,
-            115,
-            40.2042,
-            "RuEasy",
-            {
-                "\u0441": {
-                    "value": "\u0441",
-                    "sum_fails": 0,
-                    "sum_time": 2.7798280715942383,
-                    "use_count": 3
-                },
-                "\u0435": {
-                    "value": "\u0435",
-                    "sum_fails": 0,
-                    "sum_time": 3.077054023742676,
-                    "use_count": 14
-                },
-                "\u0440": {
-                    "value": "\u0440",
-                    "sum_fails": 0,
-                    "sum_time": 0.46672940254211426,
+                    "sum_time": 3.4089908599853516,
                     "use_count": 4
-                },
-                "\u0434": {
-                    "value": "\u0434",
-                    "sum_fails": 0,
-                    "sum_time": 1.0943892002105713,
-                    "use_count": 4
-                },
-                "\u0446": {
-                    "value": "\u0446",
-                    "sum_fails": 0,
-                    "sum_time": 0.5683059692382812,
-                    "use_count": 1
                 },
                 "?": {
                     "value": "?",
                     "sum_fails": 1,
-                    "sum_time": 2.6057779788970947,
+                    "sum_time": 1.8771464824676514,
                     "use_count": 1
+                },
+                "\"": {
+                    "value": "\"",
+                    "sum_fails": 0,
+                    "sum_time": 2.0258569717407227,
+                    "use_count": 2
                 },
                 " ": {
                     "value": " ",
                     "sum_fails": 0,
-                    "sum_time": 4.451431512832642,
+                    "sum_time": 4.625389099121094,
                     "use_count": 19
                 },
-                "\u0443": {
-                    "value": "\u0443",
-                    "sum_fails": 0,
-                    "sum_time": 1.149083137512207,
-                    "use_count": 3
+                "i": {
+                    "value": "i",
+                    "sum_fails": 1,
+                    "sum_time": 30.83975338935852,
+                    "use_count": 8
                 },
-                "\u043c": {
-                    "value": "\u043c",
-                    "sum_fails": 0,
-                    "sum_time": 2.4869072437286377,
-                    "use_count": 7
+                "d": {
+                    "value": "d",
+                    "sum_fails": 2,
+                    "sum_time": 3.8309004306793213,
+                    "use_count": 4
                 },
-                "\u0430": {
-                    "value": "\u0430",
+                "w": {
+                    "value": "w",
                     "sum_fails": 0,
-                    "sum_time": 0.9858043193817139,
+                    "sum_time": 0.17731285095214844,
+                    "use_count": 1
+                },
+                "h": {
+                    "value": "h",
+                    "sum_fails": 0,
+                    "sum_time": 2.367938995361328,
+                    "use_count": 4
+                },
+                "n": {
+                    "value": "n",
+                    "sum_fails": 1,
+                    "sum_time": 1.0473456382751465,
                     "use_count": 6
                 },
-                "\u044e": {
-                    "value": "\u044e",
+                "g": {
+                    "value": "g",
                     "sum_fails": 0,
-                    "sum_time": 0.2676379680633545,
+                    "sum_time": 0.8915905952453613,
+                    "use_count": 2
+                },
+                "o": {
+                    "value": "o",
+                    "sum_fails": 0,
+                    "sum_time": 1.4826784133911133,
+                    "use_count": 5
+                },
+                "l": {
+                    "value": "l",
+                    "sum_fails": 0,
+                    "sum_time": 0.654829740524292,
+                    "use_count": 3
+                },
+                ".": {
+                    "value": ".",
+                    "sum_fails": 3,
+                    "sum_time": 5.979916572570801,
+                    "use_count": 2
+                },
+                "'": {
+                    "value": "'",
+                    "sum_fails": 0,
+                    "sum_time": 2.846414804458618,
+                    "use_count": 2
+                },
+                "p": {
+                    "value": "p",
+                    "sum_fails": 0,
+                    "sum_time": 1.4877865314483643,
+                    "use_count": 2
+                },
+                "c": {
+                    "value": "c",
+                    "sum_fails": 0,
+                    "sum_time": 0.6713225841522217,
+                    "use_count": 1
+                },
+                "b": {
+                    "value": "b",
+                    "sum_fails": 0,
+                    "sum_time": 1.0696768760681152,
+                    "use_count": 1
+                },
+                "u": {
+                    "value": "u",
+                    "sum_fails": 0,
+                    "sum_time": 0.964458703994751,
+                    "use_count": 1
+                },
+                ",": {
+                    "value": ",",
+                    "sum_fails": 1,
+                    "sum_time": 3.287199020385742,
+                    "use_count": 1
+                },
+                "m": {
+                    "value": "m",
+                    "sum_fails": 0,
+                    "sum_time": 0.11285066604614258,
+                    "use_count": 1
+                },
+                "y": {
+                    "value": "y",
+                    "sum_fails": 0,
+                    "sum_time": 0.24970293045043945,
+                    "use_count": 1
+                }
+            }
+        ],
+        [
+            18,
+            112,
+            92.9166,
+            "EnEasy",
+            {
+                "o": {
+                    "value": "o",
+                    "sum_fails": 1,
+                    "sum_time": 7.395597219467163,
+                    "use_count": 8
+                },
+                "n": {
+                    "value": "n",
+                    "sum_fails": 0,
+                    "sum_time": 1.2655847072601318,
+                    "use_count": 5
+                },
+                "e": {
+                    "value": "e",
+                    "sum_fails": 0,
+                    "sum_time": 1.5574257373809814,
+                    "use_count": 9
+                },
+                " ": {
+                    "value": " ",
+                    "sum_fails": 0,
+                    "sum_time": 4.187594652175903,
+                    "use_count": 19
+                },
+                "f": {
+                    "value": "f",
+                    "sum_fails": 0,
+                    "sum_time": 2.00597882270813,
+                    "use_count": 2
+                },
+                "r": {
+                    "value": "r",
+                    "sum_fails": 1,
+                    "sum_time": 2.421292781829834,
+                    "use_count": 7
+                },
+                "c": {
+                    "value": "c",
+                    "sum_fails": 2,
+                    "sum_time": 4.203518867492676,
+                    "use_count": 5
+                },
+                "a": {
+                    "value": "a",
+                    "sum_fails": 1,
+                    "sum_time": 5.425947427749634,
+                    "use_count": 7
+                },
+                "t": {
+                    "value": "t",
+                    "sum_fails": 0,
+                    "sum_time": 3.6779825687408447,
+                    "use_count": 5
+                },
+                "h": {
+                    "value": "h",
+                    "sum_fails": 0,
+                    "sum_time": 0.8406403064727783,
+                    "use_count": 4
+                },
+                "i": {
+                    "value": "i",
+                    "sum_fails": 0,
+                    "sum_time": 5.161469459533691,
+                    "use_count": 10
+                },
+                "g": {
+                    "value": "g",
+                    "sum_fails": 0,
+                    "sum_time": 0.68666672706604,
+                    "use_count": 4
+                },
+                "m": {
+                    "value": "m",
+                    "sum_fails": 0,
+                    "sum_time": 1.7164723873138428,
+                    "use_count": 3
+                },
+                "-": {
+                    "value": "-",
+                    "sum_fails": 0,
+                    "sum_time": 1.0765047073364258,
                     "use_count": 1
                 },
                 ",": {
                     "value": ",",
                     "sum_fails": 2,
-                    "sum_time": 3.6576859951019287,
+                    "sum_time": 4.9550769329071045,
+                    "use_count": 3
+                },
+                "b": {
+                    "value": "b",
+                    "sum_fails": 0,
+                    "sum_time": 1.4244070053100586,
+                    "use_count": 2
+                },
+                "y": {
+                    "value": "y",
+                    "sum_fails": 0,
+                    "sum_time": 1.0744190216064453,
+                    "use_count": 1
+                },
+                "u": {
+                    "value": "u",
+                    "sum_fails": 0,
+                    "sum_time": 0.7084770202636719,
+                    "use_count": 2
+                },
+                "p": {
+                    "value": "p",
+                    "sum_fails": 1,
+                    "sum_time": 1.8076183795928955,
+                    "use_count": 1
+                },
+                "d": {
+                    "value": "d",
+                    "sum_fails": 0,
+                    "sum_time": 0.47104907035827637,
+                    "use_count": 2
+                },
+                "!": {
+                    "value": "!",
+                    "sum_fails": 1,
+                    "sum_time": 2.205703020095825,
+                    "use_count": 1
+                },
+                "'": {
+                    "value": "'",
+                    "sum_fails": 2,
+                    "sum_time": 8.345217227935791,
+                    "use_count": 1
+                },
+                "l": {
+                    "value": "l",
+                    "sum_fails": 0,
+                    "sum_time": 1.7178118228912354,
                     "use_count": 4
                 },
-                "\u0447": {
-                    "value": "\u0447",
+                "s": {
+                    "value": "s",
                     "sum_fails": 1,
-                    "sum_time": 2.572221517562866,
-                    "use_count": 3
+                    "sum_time": 1.9952034950256348,
+                    "use_count": 4
                 },
-                "\u0442": {
-                    "value": "\u0442",
+                "w": {
+                    "value": "w",
                     "sum_fails": 0,
-                    "sum_time": 1.6129374504089355,
-                    "use_count": 10
-                },
-                "\u043e": {
-                    "value": "\u043e",
-                    "sum_fails": 0,
-                    "sum_time": 0.6481716632843018,
-                    "use_count": 6
-                },
-                "\u0436": {
-                    "value": "\u0436",
-                    "sum_fails": 0,
-                    "sum_time": 0.20936059951782227,
+                    "sum_time": 0.8680448532104492,
                     "use_count": 1
                 },
-                "\u0432": {
-                    "value": "\u0432",
-                    "sum_fails": 2,
-                    "sum_time": 4.880920648574829,
-                    "use_count": 3
-                },
-                "\u043b": {
-                    "value": "\u043b",
+                "v": {
+                    "value": "v",
                     "sum_fails": 0,
-                    "sum_time": 1.4004409313201904,
-                    "use_count": 5
-                },
-                "\u044d": {
-                    "value": "\u044d",
-                    "sum_fails": 0,
-                    "sum_time": 1.0968654155731201,
-                    "use_count": 2
-                },
-                "\u0438": {
-                    "value": "\u0438",
-                    "sum_fails": 0,
-                    "sum_time": 0.4740762710571289,
-                    "use_count": 5
-                },
-                ".": {
-                    "value": ".",
-                    "sum_fails": 0,
-                    "sum_time": 1.463379144668579,
-                    "use_count": 2
-                },
-                "\u043d": {
-                    "value": "\u043d",
-                    "sum_fails": 0,
-                    "sum_time": 0.46895885467529297,
-                    "use_count": 3
-                },
-                "\u044c": {
-                    "value": "\u044c",
-                    "sum_fails": 0,
-                    "sum_time": 0.0902857780456543,
-                    "use_count": 1
-                },
-                "\u0448": {
-                    "value": "\u0448",
-                    "sum_fails": 0,
-                    "sum_time": 0.10523605346679688,
-                    "use_count": 1
-                },
-                "\u0437": {
-                    "value": "\u0437",
-                    "sum_fails": 0,
-                    "sum_time": 0.5102143287658691,
-                    "use_count": 1
-                },
-                "\u0433": {
-                    "value": "\u0433",
-                    "sum_fails": 0,
-                    "sum_time": 0.2373204231262207,
-                    "use_count": 1
-                },
-                "\u043a": {
-                    "value": "\u043a",
-                    "sum_fails": 0,
-                    "sum_time": 0.16996264457702637,
-                    "use_count": 1
-                },
-                "\u044b": {
-                    "value": "\u044b",
-                    "sum_fails": 0,
-                    "sum_time": 0.06982588768005371,
-                    "use_count": 1
-                },
-                "\u043f": {
-                    "value": "\u043f",
-                    "sum_fails": 0,
-                    "sum_time": 0.19991612434387207,
-                    "use_count": 1
-                },
-                "\u044f": {
-                    "value": "\u044f",
-                    "sum_fails": 0,
-                    "sum_time": 0.09447884559631348,
+                    "sum_time": 0.3131415843963623,
                     "use_count": 1
                 }
             }
         ],
         [
             17,
-            132,
-            47.049,
-            "RuEasy",
-            {
-                "\u043c": {
-                    "value": "\u043c",
-                    "sum_fails": 0,
-                    "sum_time": 1.4039840698242188,
-                    "use_count": 3
-                },
-                "\u0435": {
-                    "value": "\u0435",
-                    "sum_fails": 0,
-                    "sum_time": 0.5603199005126953,
-                    "use_count": 3
-                },
-                "\u043d": {
-                    "value": "\u043d",
-                    "sum_fails": 1,
-                    "sum_time": 2.315110206604004,
-                    "use_count": 4
-                },
-                "\u044f": {
-                    "value": "\u044f",
-                    "sum_fails": 0,
-                    "sum_time": 0.44049739837646484,
-                    "use_count": 2
-                },
-                ",": {
-                    "value": ",",
-                    "sum_fails": 2,
-                    "sum_time": 2.821580648422241,
-                    "use_count": 1
-                },
-                " ": {
-                    "value": " ",
-                    "sum_fails": 0,
-                    "sum_time": 3.6416001319885254,
-                    "use_count": 19
-                },
-                "\u043a": {
-                    "value": "\u043a",
-                    "sum_fails": 0,
-                    "sum_time": 1.3836231231689453,
-                    "use_count": 6
-                },
-                "\u0430": {
-                    "value": "\u0430",
-                    "sum_fails": 0,
-                    "sum_time": 2.188856363296509,
-                    "use_count": 11
-                },
-                "\u043e": {
-                    "value": "\u043e",
-                    "sum_fails": 0,
-                    "sum_time": 1.6887803077697754,
-                    "use_count": 9
-                },
-                "\u0442": {
-                    "value": "\u0442",
-                    "sum_fails": 0,
-                    "sum_time": 1.951096773147583,
-                    "use_count": 8
-                },
-                "\u0451": {
-                    "value": "\u0451",
-                    "sum_fails": 1,
-                    "sum_time": 3.4276609420776367,
-                    "use_count": 2
-                },
-                ".": {
-                    "value": ".",
-                    "sum_fails": 1,
-                    "sum_time": 2.340568780899048,
-                    "use_count": 5
-                },
-                "\u0443": {
-                    "value": "\u0443",
-                    "sum_fails": 0,
-                    "sum_time": 1.6128413677215576,
-                    "use_count": 4
-                },
-                "\u0436": {
-                    "value": "\u0436",
-                    "sum_fails": 0,
-                    "sum_time": 1.0546605587005615,
-                    "use_count": 3
-                },
-                "\u0441": {
-                    "value": "\u0441",
-                    "sum_fails": 1,
-                    "sum_time": 3.1445553302764893,
-                    "use_count": 9
-                },
-                "\u0431": {
-                    "value": "\u0431",
-                    "sum_fails": 0,
-                    "sum_time": 0.8486979007720947,
-                    "use_count": 3
-                },
-                "\u044e": {
-                    "value": "\u044e",
-                    "sum_fails": 0,
-                    "sum_time": 0.3685605525970459,
-                    "use_count": 1
-                },
-                "\u044c": {
-                    "value": "\u044c",
-                    "sum_fails": 0,
-                    "sum_time": 0.19570517539978027,
-                    "use_count": 2
-                },
-                "\u043b": {
-                    "value": "\u043b",
-                    "sum_fails": 1,
-                    "sum_time": 3.5551223754882812,
-                    "use_count": 7
-                },
-                "\u0437": {
-                    "value": "\u0437",
-                    "sum_fails": 0,
-                    "sum_time": 0.8079838752746582,
-                    "use_count": 3
-                },
-                "\u044b": {
-                    "value": "\u044b",
-                    "sum_fails": 1,
-                    "sum_time": 4.568089723587036,
-                    "use_count": 2
-                },
-                "\u0445": {
-                    "value": "\u0445",
-                    "sum_fails": 0,
-                    "sum_time": 0.8900306224822998,
-                    "use_count": 2
-                },
-                "\u0438": {
-                    "value": "\u0438",
-                    "sum_fails": 1,
-                    "sum_time": 2.184105157852173,
-                    "use_count": 9
-                },
-                "\u0433": {
-                    "value": "\u0433",
-                    "sum_fails": 0,
-                    "sum_time": 0.21065187454223633,
-                    "use_count": 1
-                },
-                "\u0440": {
-                    "value": "\u0440",
-                    "sum_fails": 0,
-                    "sum_time": 0.6538786888122559,
-                    "use_count": 5
-                },
-                "\u0432": {
-                    "value": "\u0432",
-                    "sum_fails": 0,
-                    "sum_time": 0.4271235466003418,
-                    "use_count": 2
-                },
-                "\u043f": {
-                    "value": "\u043f",
-                    "sum_fails": 0,
-                    "sum_time": 1.1544201374053955,
-                    "use_count": 4
-                },
-                "\u0447": {
-                    "value": "\u0447",
-                    "sum_fails": 0,
-                    "sum_time": 0.3628811836242676,
-                    "use_count": 1
-                },
-                "\u044d": {
-                    "value": "\u044d",
-                    "sum_fails": 0,
-                    "sum_time": 0.4847228527069092,
-                    "use_count": 1
-                }
-            }
-        ],
-        [
-            3,
             134,
-            42.0131,
-            "RuEasy",
-            {
-                "\u0438": {
-                    "value": "\u0438",
-                    "sum_fails": 0,
-                    "sum_time": 3.275672674179077,
-                    "use_count": 11
-                },
-                "\u0437": {
-                    "value": "\u0437",
-                    "sum_fails": 0,
-                    "sum_time": 2.511147975921631,
-                    "use_count": 5
-                },
-                "\u0433": {
-                    "value": "\u0433",
-                    "sum_fails": 0,
-                    "sum_time": 0.24392342567443848,
-                    "use_count": 1
-                },
-                "\u043e": {
-                    "value": "\u043e",
-                    "sum_fails": 0,
-                    "sum_time": 1.382807731628418,
-                    "use_count": 8
-                },
-                "\u0440": {
-                    "value": "\u0440",
-                    "sum_fails": 0,
-                    "sum_time": 1.048597812652588,
-                    "use_count": 6
-                },
-                "\u0434": {
-                    "value": "\u0434",
-                    "sum_fails": 1,
-                    "sum_time": 3.6625564098358154,
-                    "use_count": 6
-                },
-                " ": {
-                    "value": " ",
-                    "sum_fails": 0,
-                    "sum_time": 4.322690010070801,
-                    "use_count": 19
-                },
-                "\u043c": {
-                    "value": "\u043c",
-                    "sum_fails": 0,
-                    "sum_time": 0.7414278984069824,
-                    "use_count": 2
-                },
-                "\u0430": {
-                    "value": "\u0430",
-                    "sum_fails": 0,
-                    "sum_time": 1.5865559577941895,
-                    "use_count": 10
-                },
-                "\u0431": {
-                    "value": "\u0431",
-                    "sum_fails": 0,
-                    "sum_time": 0.30577540397644043,
-                    "use_count": 1
-                },
-                "\u044b": {
-                    "value": "\u044b",
-                    "sum_fails": 0,
-                    "sum_time": 1.1329782009124756,
-                    "use_count": 5
-                },
-                "\u043b": {
-                    "value": "\u043b",
-                    "sum_fails": 0,
-                    "sum_time": 1.3171288967132568,
-                    "use_count": 6
-                },
-                "\u0432": {
-                    "value": "\u0432",
-                    "sum_fails": 0,
-                    "sum_time": 1.6241519451141357,
-                    "use_count": 4
-                },
-                "\u043a": {
-                    "value": "\u043a",
-                    "sum_fails": 0,
-                    "sum_time": 0.928433895111084,
-                    "use_count": 3
-                },
-                "\u0448": {
-                    "value": "\u0448",
-                    "sum_fails": 0,
-                    "sum_time": 0.3690793514251709,
-                    "use_count": 1
-                },
-                "\u0435": {
-                    "value": "\u0435",
-                    "sum_fails": 0,
-                    "sum_time": 0.9240779876708984,
-                    "use_count": 5
-                },
-                "\u043d": {
-                    "value": "\u043d",
-                    "sum_fails": 0,
-                    "sum_time": 2.471367120742798,
-                    "use_count": 8
-                },
-                "\u0441": {
-                    "value": "\u0441",
-                    "sum_fails": 0,
-                    "sum_time": 0.8932011127471924,
-                    "use_count": 4
-                },
-                "\u0439": {
-                    "value": "\u0439",
-                    "sum_fails": 0,
-                    "sum_time": 0.595984697341919,
-                    "use_count": 2
-                },
-                "\u044f": {
-                    "value": "\u044f",
-                    "sum_fails": 0,
-                    "sum_time": 0.25199031829833984,
-                    "use_count": 2
-                },
-                "-": {
-                    "value": "-",
-                    "sum_fails": 0,
-                    "sum_time": 0.717932939529419,
-                    "use_count": 1
-                },
-                "\u0451": {
-                    "value": "\u0451",
-                    "sum_fails": 0,
-                    "sum_time": 0.9115734100341797,
-                    "use_count": 2
-                },
-                "\u0446": {
-                    "value": "\u0446",
-                    "sum_fails": 0,
-                    "sum_time": 0.48037028312683105,
-                    "use_count": 1
-                },
-                "\u0442": {
-                    "value": "\u0442",
-                    "sum_fails": 0,
-                    "sum_time": 1.0113778114318848,
-                    "use_count": 5
-                },
-                ",": {
-                    "value": ",",
-                    "sum_fails": 2,
-                    "sum_time": 4.79189395904541,
-                    "use_count": 3
-                },
-                "\u044e": {
-                    "value": "\u044e",
-                    "sum_fails": 0,
-                    "sum_time": 0.9156272411346436,
-                    "use_count": 2
-                },
-                "\u0443": {
-                    "value": "\u0443",
-                    "sum_fails": 0,
-                    "sum_time": 0.9590673446655273,
-                    "use_count": 4
-                },
-                "\u0436": {
-                    "value": "\u0436",
-                    "sum_fails": 0,
-                    "sum_time": 0.16971969604492188,
-                    "use_count": 1
-                },
-                ".": {
-                    "value": ".",
-                    "sum_fails": 0,
-                    "sum_time": 0.5282366275787354,
-                    "use_count": 1
-                },
-                "\u044d": {
-                    "value": "\u044d",
-                    "sum_fails": 0,
-                    "sum_time": 0.25272631645202637,
-                    "use_count": 1
-                },
-                "\u0447": {
-                    "value": "\u0447",
-                    "sum_fails": 0,
-                    "sum_time": 1.129664659500122,
-                    "use_count": 3
-                },
-                "\u044c": {
-                    "value": "\u044c",
-                    "sum_fails": 0,
-                    "sum_time": 0.30881714820861816,
-                    "use_count": 1
-                }
-            }
-        ],
-        [
-            2,
-            119,
-            30.5746,
-            "RuEasy",
-            {
-                "\u043d": {
-                    "value": "\u043d",
-                    "sum_fails": 0,
-                    "sum_time": 2.8734400272369385,
-                    "use_count": 7
-                },
-                "\u0430": {
-                    "value": "\u0430",
-                    "sum_fails": 1,
-                    "sum_time": 2.1221725940704346,
-                    "use_count": 10
-                },
-                " ": {
-                    "value": " ",
-                    "sum_fails": 0,
-                    "sum_time": 3.2808244228363037,
-                    "use_count": 19
-                },
-                "\u0442": {
-                    "value": "\u0442",
-                    "sum_fails": 0,
-                    "sum_time": 1.2621779441833496,
-                    "use_count": 4
-                },
-                "\u0443": {
-                    "value": "\u0443",
-                    "sum_fails": 0,
-                    "sum_time": 1.3140275478363037,
-                    "use_count": 4
-                },
-                "\u0441": {
-                    "value": "\u0441",
-                    "sum_fails": 0,
-                    "sum_time": 2.146361827850342,
-                    "use_count": 10
-                },
-                "\u043e": {
-                    "value": "\u043e",
-                    "sum_fails": 0,
-                    "sum_time": 0.9686260223388672,
-                    "use_count": 7
-                },
-                "\u0440": {
-                    "value": "\u0440",
-                    "sum_fails": 0,
-                    "sum_time": 1.1464498043060303,
-                    "use_count": 6
-                },
-                "\u0435": {
-                    "value": "\u0435",
-                    "sum_fails": 0,
-                    "sum_time": 1.4987218379974365,
-                    "use_count": 9
-                },
-                "\u043a": {
-                    "value": "\u043a",
-                    "sum_fails": 0,
-                    "sum_time": 0.9055593013763428,
-                    "use_count": 4
-                },
-                "\u0438": {
-                    "value": "\u0438",
-                    "sum_fails": 0,
-                    "sum_time": 1.2111210823059082,
-                    "use_count": 7
-                },
-                "!": {
-                    "value": "!",
-                    "sum_fails": 0,
-                    "sum_time": 0.5823371410369873,
-                    "use_count": 1
-                },
-                "\u043f": {
-                    "value": "\u043f",
-                    "sum_fails": 0,
-                    "sum_time": 1.3233616352081299,
-                    "use_count": 5
-                },
-                "\u043b": {
-                    "value": "\u043b",
-                    "sum_fails": 0,
-                    "sum_time": 2.1887638568878174,
-                    "use_count": 7
-                },
-                "\u044f": {
-                    "value": "\u044f",
-                    "sum_fails": 0,
-                    "sum_time": 0.07973146438598633,
-                    "use_count": 1
-                },
-                "\u0434": {
-                    "value": "\u0434",
-                    "sum_fails": 0,
-                    "sum_time": 1.5198776721954346,
-                    "use_count": 3
-                },
-                "\u044d": {
-                    "value": "\u044d",
-                    "sum_fails": 0,
-                    "sum_time": 0.7774007320404053,
-                    "use_count": 1
-                },
-                "\u0432": {
-                    "value": "\u0432",
-                    "sum_fails": 1,
-                    "sum_time": 1.7923781871795654,
-                    "use_count": 4
-                },
-                "\u0447": {
-                    "value": "\u0447",
-                    "sum_fails": 0,
-                    "sum_time": 0.6464178562164307,
-                    "use_count": 2
-                },
-                "\u044b": {
-                    "value": "\u044b",
-                    "sum_fails": 0,
-                    "sum_time": 1.1769499778747559,
-                    "use_count": 3
-                },
-                ".": {
-                    "value": ".",
-                    "sum_fails": 0,
-                    "sum_time": 0.33557581901550293,
-                    "use_count": 1
-                },
-                "\u0431": {
-                    "value": "\u0431",
-                    "sum_fails": 0,
-                    "sum_time": 0.39171576499938965,
-                    "use_count": 2
-                },
-                ",": {
-                    "value": ",",
-                    "sum_fails": 0,
-                    "sum_time": 0.4636094570159912,
-                    "use_count": 1
-                },
-                "\u044c": {
-                    "value": "\u044c",
-                    "sum_fails": 0,
-                    "sum_time": 0.1691126823425293,
-                    "use_count": 1
-                }
-            }
-        ],
-        [
-            13,
-            114,
-            48.6503,
-            "EnEasy",
-            {
-                "s": {
-                    "value": "s",
-                    "sum_fails": 1,
-                    "sum_time": 3.8351454734802246,
-                    "use_count": 6
-                },
-                "o": {
-                    "value": "o",
-                    "sum_fails": 1,
-                    "sum_time": 4.615020513534546,
-                    "use_count": 8
-                },
-                " ": {
-                    "value": " ",
-                    "sum_fails": 0,
-                    "sum_time": 5.13457179069519,
-                    "use_count": 19
-                },
-                "e": {
-                    "value": "e",
-                    "sum_fails": 1,
-                    "sum_time": 7.126266956329346,
-                    "use_count": 10
-                },
-                "a": {
-                    "value": "a",
-                    "sum_fails": 1,
-                    "sum_time": 1.9542946815490723,
-                    "use_count": 7
-                },
-                "g": {
-                    "value": "g",
-                    "sum_fails": 0,
-                    "sum_time": 2.0347611904144287,
-                    "use_count": 4
-                },
-                "r": {
-                    "value": "r",
-                    "sum_fails": 0,
-                    "sum_time": 2.2479724884033203,
-                    "use_count": 7
-                },
-                "l": {
-                    "value": "l",
-                    "sum_fails": 0,
-                    "sum_time": 0.5074923038482666,
-                    "use_count": 2
-                },
-                "y": {
-                    "value": "y",
-                    "sum_fails": 0,
-                    "sum_time": 0.3455328941345215,
-                    "use_count": 2
-                },
-                "t": {
-                    "value": "t",
-                    "sum_fails": 0,
-                    "sum_time": 4.024186849594116,
-                    "use_count": 10
-                },
-                "h": {
-                    "value": "h",
-                    "sum_fails": 0,
-                    "sum_time": 1.321028709411621,
-                    "use_count": 6
-                },
-                "p": {
-                    "value": "p",
-                    "sum_fails": 0,
-                    "sum_time": 0.9250235557556152,
-                    "use_count": 2
-                },
-                "n": {
-                    "value": "n",
-                    "sum_fails": 0,
-                    "sum_time": 1.268648386001587,
-                    "use_count": 7
-                },
-                "i": {
-                    "value": "i",
-                    "sum_fails": 0,
-                    "sum_time": 1.5245060920715332,
-                    "use_count": 4
-                },
-                "d": {
-                    "value": "d",
-                    "sum_fails": 0,
-                    "sum_time": 0.7011942863464355,
-                    "use_count": 3
-                },
-                ",": {
-                    "value": ",",
-                    "sum_fails": 1,
-                    "sum_time": 3.001192569732666,
-                    "use_count": 3
-                },
-                "f": {
-                    "value": "f",
-                    "sum_fails": 0,
-                    "sum_time": 0.8044552803039551,
-                    "use_count": 3
-                },
-                "'": {
-                    "value": "'",
-                    "sum_fails": 0,
-                    "sum_time": 0.9608654975891113,
-                    "use_count": 1
-                },
-                "m": {
-                    "value": "m",
-                    "sum_fails": 0,
-                    "sum_time": 0.33881068229675293,
-                    "use_count": 1
-                },
-                "!": {
-                    "value": "!",
-                    "sum_fails": 0,
-                    "sum_time": 1.56429123878479,
-                    "use_count": 2
-                },
-                "c": {
-                    "value": "c",
-                    "sum_fails": 0,
-                    "sum_time": 0.5141160488128662,
-                    "use_count": 2
-                },
-                "u": {
-                    "value": "u",
-                    "sum_fails": 0,
-                    "sum_time": 0.5842878818511963,
-                    "use_count": 3
-                },
-                "\"": {
-                    "value": "\"",
-                    "sum_fails": 1,
-                    "sum_time": 2.828996419906616,
-                    "use_count": 2
-                }
-            }
-        ],
-        [
-            9,
-            108,
-            45.8267,
-            "EnEasy",
-            {
-                "t": {
-                    "value": "t",
-                    "sum_fails": 0,
-                    "sum_time": 3.9860076904296875,
-                    "use_count": 11
-                },
-                "h": {
-                    "value": "h",
-                    "sum_fails": 1,
-                    "sum_time": 2.0047459602355957,
-                    "use_count": 5
-                },
-                "a": {
-                    "value": "a",
-                    "sum_fails": 0,
-                    "sum_time": 2.609800338745117,
-                    "use_count": 8
-                },
-                " ": {
-                    "value": " ",
-                    "sum_fails": 0,
-                    "sum_time": 5.314809799194336,
-                    "use_count": 19
-                },
-                "p": {
-                    "value": "p",
-                    "sum_fails": 0,
-                    "sum_time": 0.4603607654571533,
-                    "use_count": 1
-                },
-                "r": {
-                    "value": "r",
-                    "sum_fails": 0,
-                    "sum_time": 1.2179219722747803,
-                    "use_count": 5
-                },
-                ".": {
-                    "value": ".",
-                    "sum_fails": 1,
-                    "sum_time": 1.6904573440551758,
-                    "use_count": 1
-                },
-                "'": {
-                    "value": "'",
-                    "sum_fails": 0,
-                    "sum_time": 3.4502172470092773,
-                    "use_count": 3
-                },
-                "w": {
-                    "value": "w",
-                    "sum_fails": 0,
-                    "sum_time": 1.0181729793548584,
-                    "use_count": 2
-                },
-                "e": {
-                    "value": "e",
-                    "sum_fails": 1,
-                    "sum_time": 4.577243089675903,
-                    "use_count": 10
-                },
-                "l": {
-                    "value": "l",
-                    "sum_fails": 0,
-                    "sum_time": 1.2305634021759033,
-                    "use_count": 4
-                },
-                ",": {
-                    "value": ",",
-                    "sum_fails": 2,
-                    "sum_time": 3.198181629180908,
-                    "use_count": 3
-                },
-                "n": {
-                    "value": "n",
-                    "sum_fails": 0,
-                    "sum_time": 1.0371227264404297,
-                    "use_count": 6
-                },
-                "y": {
-                    "value": "y",
-                    "sum_fails": 0,
-                    "sum_time": 0.3944392204284668,
-                    "use_count": 2
-                },
-                "d": {
-                    "value": "d",
-                    "sum_fails": 0,
-                    "sum_time": 1.3701837062835693,
-                    "use_count": 3
-                },
-                "o": {
-                    "value": "o",
-                    "sum_fails": 0,
-                    "sum_time": 2.056868314743042,
-                    "use_count": 8
-                },
-                "m": {
-                    "value": "m",
-                    "sum_fails": 0,
-                    "sum_time": 0.657341480255127,
-                    "use_count": 1
-                },
-                "u": {
-                    "value": "u",
-                    "sum_fails": 1,
-                    "sum_time": 3.6024651527404785,
-                    "use_count": 3
-                },
-                "s": {
-                    "value": "s",
-                    "sum_fails": 0,
-                    "sum_time": 0.9969031810760498,
-                    "use_count": 4
-                },
-                "i": {
-                    "value": "i",
-                    "sum_fails": 0,
-                    "sum_time": 2.8264245986938477,
-                    "use_count": 4
-                },
-                "-": {
-                    "value": "-",
-                    "sum_fails": 0,
-                    "sum_time": 0.4438462257385254,
-                    "use_count": 1
-                },
-                "k": {
-                    "value": "k",
-                    "sum_fails": 0,
-                    "sum_time": 0.6189558506011963,
-                    "use_count": 1
-                },
-                "g": {
-                    "value": "g",
-                    "sum_fails": 0,
-                    "sum_time": 0.2094874382019043,
-                    "use_count": 1
-                },
-                "x": {
-                    "value": "x",
-                    "sum_fails": 0,
-                    "sum_time": 0.39884328842163086,
-                    "use_count": 1
-                },
-                "f": {
-                    "value": "f",
-                    "sum_fails": 0,
-                    "sum_time": 0.1450517177581787,
-                    "use_count": 1
-                }
-            }
-        ],
-        [
-            0,
-            94,
-            32.8927,
-            "EnEasy",
-            {
-                "d": {
-                    "value": "d",
-                    "sum_fails": 0,
-                    "sum_time": 1.56190824508667,
-                    "use_count": 2
-                },
-                "o": {
-                    "value": "o",
-                    "sum_fails": 0,
-                    "sum_time": 3.7032270431518555,
-                    "use_count": 11
-                },
-                " ": {
-                    "value": " ",
-                    "sum_fails": 0,
-                    "sum_time": 3.8514420986175537,
-                    "use_count": 19
-                },
-                "y": {
-                    "value": "y",
-                    "sum_fails": 0,
-                    "sum_time": 0.9515852928161621,
-                    "use_count": 3
-                },
-                "u": {
-                    "value": "u",
-                    "sum_fails": 0,
-                    "sum_time": 1.1191847324371338,
-                    "use_count": 4
-                },
-                "k": {
-                    "value": "k",
-                    "sum_fails": 0,
-                    "sum_time": 0.7962682247161865,
-                    "use_count": 1
-                },
-                "n": {
-                    "value": "n",
-                    "sum_fails": 0,
-                    "sum_time": 1.0717658996582031,
-                    "use_count": 2
-                },
-                "w": {
-                    "value": "w",
-                    "sum_fails": 0,
-                    "sum_time": 1.1431171894073486,
-                    "use_count": 3
-                },
-                "t": {
-                    "value": "t",
-                    "sum_fails": 0,
-                    "sum_time": 1.5012171268463135,
-                    "use_count": 5
-                },
-                "h": {
-                    "value": "h",
-                    "sum_fails": 0,
-                    "sum_time": 0.7983202934265137,
-                    "use_count": 3
-                },
-                "e": {
-                    "value": "e",
-                    "sum_fails": 0,
-                    "sum_time": 2.9010589122772217,
-                    "use_count": 7
-                },
-                "a": {
-                    "value": "a",
-                    "sum_fails": 0,
-                    "sum_time": 1.076714277267456,
-                    "use_count": 4
-                },
-                "f": {
-                    "value": "f",
-                    "sum_fails": 0,
-                    "sum_time": 0.4089019298553467,
-                    "use_count": 2
-                },
-                "i": {
-                    "value": "i",
-                    "sum_fails": 0,
-                    "sum_time": 2.5898804664611816,
-                    "use_count": 6
-                },
-                "s": {
-                    "value": "s",
-                    "sum_fails": 0,
-                    "sum_time": 1.029374599456787,
-                    "use_count": 3
-                },
-                "p": {
-                    "value": "p",
-                    "sum_fails": 0,
-                    "sum_time": 0.7632758617401123,
-                    "use_count": 1
-                },
-                "l": {
-                    "value": "l",
-                    "sum_fails": 0,
-                    "sum_time": 0.5385663509368896,
-                    "use_count": 2
-                },
-                "?": {
-                    "value": "?",
-                    "sum_fails": 0,
-                    "sum_time": 0.9767177104949951,
-                    "use_count": 1
-                },
-                "m": {
-                    "value": "m",
-                    "sum_fails": 0,
-                    "sum_time": 1.0091314315795898,
-                    "use_count": 4
-                },
-                "v": {
-                    "value": "v",
-                    "sum_fails": 0,
-                    "sum_time": 0.7654297351837158,
-                    "use_count": 1
-                },
-                "r": {
-                    "value": "r",
-                    "sum_fails": 0,
-                    "sum_time": 0.43172597885131836,
-                    "use_count": 3
-                },
-                "g": {
-                    "value": "g",
-                    "sum_fails": 0,
-                    "sum_time": 0.17385649681091309,
-                    "use_count": 1
-                },
-                "b": {
-                    "value": "b",
-                    "sum_fails": 0,
-                    "sum_time": 0.23943495750427246,
-                    "use_count": 1
-                },
-                ",": {
-                    "value": ",",
-                    "sum_fails": 0,
-                    "sum_time": 0.8750870227813721,
-                    "use_count": 1
-                },
-                "!": {
-                    "value": "!",
-                    "sum_fails": 0,
-                    "sum_time": 1.04026198387146,
-                    "use_count": 1
-                },
-                "'": {
-                    "value": "'",
-                    "sum_fails": 0,
-                    "sum_time": 0.49300050735473633,
-                    "use_count": 1
-                },
-                "(": {
-                    "value": "(",
-                    "sum_fails": 0,
-                    "sum_time": 0.543433427810669,
-                    "use_count": 1
-                },
-                "c": {
-                    "value": "c",
-                    "sum_fails": 0,
-                    "sum_time": 0.18694448471069336,
-                    "use_count": 1
-                }
-            }
-        ],
-        [
-            3,
-            141,
-            51.8006,
+            71.9625,
             "Python",
             {
-                "s": {
-                    "value": "s",
-                    "sum_fails": 0,
-                    "sum_time": 3.760746479034424,
-                    "use_count": 11
-                },
-                "e": {
-                    "value": "e",
-                    "sum_fails": 0,
-                    "sum_time": 2.477776050567627,
-                    "use_count": 12
-                },
-                "l": {
-                    "value": "l",
-                    "sum_fails": 0,
-                    "sum_time": 3.1976990699768066,
-                    "use_count": 9
-                },
-                "f": {
-                    "value": "f",
-                    "sum_fails": 0,
-                    "sum_time": 0.8656139373779297,
-                    "use_count": 6
-                },
-                ".": {
-                    "value": ".",
-                    "sum_fails": 0,
-                    "sum_time": 0.7366535663604736,
-                    "use_count": 2
-                },
-                "_": {
-                    "value": "_",
-                    "sum_fails": 0,
-                    "sum_time": 6.014921188354492,
-                    "use_count": 8
-                },
-                "v": {
-                    "value": "v",
-                    "sum_fails": 0,
-                    "sum_time": 1.0079224109649658,
-                    "use_count": 1
-                },
-                "a": {
-                    "value": "a",
-                    "sum_fails": 0,
-                    "sum_time": 2.8642399311065674,
-                    "use_count": 12
+                "n": {
+                    "value": "n",
+                    "sum_fails": 1,
+                    "sum_time": 11.694048404693604,
+                    "use_count": 18
                 },
                 "u": {
                     "value": "u",
-                    "sum_fails": 0,
-                    "sum_time": 0.433133602142334,
-                    "use_count": 4
+                    "sum_fails": 1,
+                    "sum_time": 3.299668073654175,
+                    "use_count": 13
                 },
-                "[": {
-                    "value": "[",
+                "m": {
+                    "value": "m",
                     "sum_fails": 0,
-                    "sum_time": 0.5891599655151367,
-                    "use_count": 1
-                },
-                "h": {
-                    "value": "h",
-                    "sum_fails": 0,
-                    "sum_time": 3.0883209705352783,
-                    "use_count": 12
-                },
-                "]": {
-                    "value": "]",
-                    "sum_fails": 0,
-                    "sum_time": 0.39763975143432617,
-                    "use_count": 1
+                    "sum_time": 3.6706316471099854,
+                    "use_count": 11
                 },
                 " ": {
                     "value": " ",
                     "sum_fails": 0,
-                    "sum_time": 5.737182855606079,
+                    "sum_time": 6.327836513519287,
                     "use_count": 19
                 },
-                "=": {
-                    "value": "=",
+                "i": {
+                    "value": "i",
                     "sum_fails": 0,
-                    "sum_time": 0.9665937423706055,
-                    "use_count": 3
+                    "sum_time": 1.766765832901001,
+                    "use_count": 5
+                },
+                "e": {
+                    "value": "e",
+                    "sum_fails": 1,
+                    "sum_time": 4.803341865539551,
+                    "use_count": 11
                 },
                 "r": {
                     "value": "r",
                     "sum_fails": 0,
-                    "sum_time": 2.377058267593384,
-                    "use_count": 5
+                    "sum_time": 1.539717674255371,
+                    "use_count": 6
+                },
+                "a": {
+                    "value": "a",
+                    "sum_fails": 2,
+                    "sum_time": 3.017963409423828,
+                    "use_count": 3
+                },
+                "t": {
+                    "value": "t",
+                    "sum_fails": 2,
+                    "sum_time": 3.1132194995880127,
+                    "use_count": 4
                 },
                 "(": {
                     "value": "(",
                     "sum_fails": 0,
-                    "sum_time": 1.5569190979003906,
-                    "use_count": 2
+                    "sum_time": 4.661733865737915,
+                    "use_count": 4
+                },
+                "s": {
+                    "value": "s",
+                    "sum_fails": 1,
+                    "sum_time": 5.218039512634277,
+                    "use_count": 8
                 },
                 ")": {
                     "value": ")",
                     "sum_fails": 0,
-                    "sum_time": 1.204437255859375,
+                    "sum_time": 1.9726471900939941,
                     "use_count": 2
-                },
-                "i": {
-                    "value": "i",
-                    "sum_fails": 0,
-                    "sum_time": 1.921119213104248,
-                    "use_count": 5
-                },
-                "n": {
-                    "value": "n",
-                    "sum_fails": 0,
-                    "sum_time": 1.4471256732940674,
-                    "use_count": 6
-                },
-                "t": {
-                    "value": "t",
-                    "sum_fails": 0,
-                    "sum_time": 0.8239269256591797,
-                    "use_count": 3
                 },
                 ":": {
                     "value": ":",
                     "sum_fails": 0,
-                    "sum_time": 0.9347236156463623,
+                    "sum_time": 0.9682421684265137,
                     "use_count": 2
                 },
-                "#": {
-                    "value": "#",
+                "f": {
+                    "value": "f",
                     "sum_fails": 0,
-                    "sum_time": 0.8552486896514893,
-                    "use_count": 1
-                },
-                "b": {
-                    "value": "b",
-                    "sum_fails": 0,
-                    "sum_time": 0.29898691177368164,
-                    "use_count": 1
-                },
-                "d": {
-                    "value": "d",
-                    "sum_fails": 1,
-                    "sum_time": 4.202197790145874,
-                    "use_count": 5
-                },
-                "w": {
-                    "value": "w",
-                    "sum_fails": 0,
-                    "sum_time": 0.5063555240631104,
+                    "sum_time": 0.05347704887390137,
                     "use_count": 1
                 },
                 "p": {
                     "value": "p",
+                    "sum_fails": 1,
+                    "sum_time": 4.643404006958008,
+                    "use_count": 3
+                },
+                "v": {
+                    "value": "v",
                     "sum_fails": 0,
-                    "sum_time": 0.5069043636322021,
-                    "use_count": 2
+                    "sum_time": 0.7048029899597168,
+                    "use_count": 3
+                },
+                "_": {
+                    "value": "_",
+                    "sum_fails": 1,
+                    "sum_time": 6.665651321411133,
+                    "use_count": 7
                 },
                 "o": {
                     "value": "o",
                     "sum_fails": 0,
-                    "sum_time": 0.5004796981811523,
+                    "sum_time": 0.8966960906982422,
+                    "use_count": 4
+                },
+                "d": {
+                    "value": "d",
+                    "sum_fails": 0,
+                    "sum_time": 0.413954496383667,
+                    "use_count": 1
+                },
+                "\\": {
+                    "value": "\\",
+                    "sum_fails": 0,
+                    "sum_time": 1.446293592453003,
+                    "use_count": 1
+                },
+                "c": {
+                    "value": "c",
+                    "sum_fails": 0,
+                    "sum_time": 1.070688247680664,
+                    "use_count": 2
+                },
+                "l": {
+                    "value": "l",
+                    "sum_fails": 0,
+                    "sum_time": 0.721050500869751,
                     "use_count": 2
                 },
                 ",": {
                     "value": ",",
-                    "sum_fails": 0,
-                    "sum_time": 1.1167724132537842,
+                    "sum_fails": 1,
+                    "sum_time": 1.2074737548828125,
                     "use_count": 1
                 },
-                "k": {
-                    "value": "k",
+                "=": {
+                    "value": "=",
                     "sum_fails": 0,
-                    "sum_time": 0.5786023139953613,
-                    "use_count": 1
+                    "sum_time": 0.5366232395172119,
+                    "use_count": 2
                 },
-                "y": {
-                    "value": "y",
+                "1": {
+                    "value": "1",
                     "sum_fails": 0,
-                    "sum_time": 0.06443333625793457,
+                    "sum_time": 0.2570974826812744,
                     "use_count": 1
                 }
             }
         ],
         [
             4,
-            136,
-            33.6693,
-            "RuEasy",
+            114,
+            36.8915,
+            "Python",
             {
-                "\u0441": {
-                    "value": "\u0441",
+                "c": {
+                    "value": "c",
                     "sum_fails": 0,
-                    "sum_time": 4.5827107429504395,
-                    "use_count": 9
-                },
-                "\u0435": {
-                    "value": "\u0435",
-                    "sum_fails": 1,
-                    "sum_time": 4.1673338413238525,
-                    "use_count": 20
-                },
-                "\u0440": {
-                    "value": "\u0440",
-                    "sum_fails": 0,
-                    "sum_time": 1.6692090034484863,
-                    "use_count": 8
-                },
-                "\u0434": {
-                    "value": "\u0434",
-                    "sum_fails": 0,
-                    "sum_time": 1.4207983016967773,
-                    "use_count": 6
-                },
-                "\u0438": {
-                    "value": "\u0438",
-                    "sum_fails": 0,
-                    "sum_time": 1.4797232151031494,
-                    "use_count": 9
-                },
-                "\u043d": {
-                    "value": "\u043d",
-                    "sum_fails": 0,
-                    "sum_time": 1.6216213703155518,
-                    "use_count": 9
-                },
-                " ": {
-                    "value": " ",
-                    "sum_fails": 0,
-                    "sum_time": 3.456998586654663,
-                    "use_count": 19
-                },
-                "\u043a": {
-                    "value": "\u043a",
-                    "sum_fails": 0,
-                    "sum_time": 0.6716840267181396,
-                    "use_count": 3
-                },
-                ".": {
-                    "value": ".",
-                    "sum_fails": 0,
-                    "sum_time": 0.8984494209289551,
-                    "use_count": 2
-                },
-                "\u0437": {
-                    "value": "\u0437",
-                    "sum_fails": 0,
-                    "sum_time": 0.8157346248626709,
-                    "use_count": 1
-                },
-                "\u044c": {
-                    "value": "\u044c",
-                    "sum_fails": 0,
-                    "sum_time": 0.13309550285339355,
-                    "use_count": 1
-                },
-                "\u0431": {
-                    "value": "\u0431",
-                    "sum_fails": 0,
-                    "sum_time": 0.4947028160095215,
-                    "use_count": 1
-                },
-                "\u044b": {
-                    "value": "\u044b",
-                    "sum_fails": 0,
-                    "sum_time": 0.2501378059387207,
-                    "use_count": 2
-                },
-                "\u0442": {
-                    "value": "\u0442",
-                    "sum_fails": 0,
-                    "sum_time": 2.130305051803589,
-                    "use_count": 9
-                },
-                "\u043e": {
-                    "value": "\u043e",
-                    "sum_fails": 1,
-                    "sum_time": 2.9316420555114746,
-                    "use_count": 10
-                },
-                "\u0447": {
-                    "value": "\u0447",
-                    "sum_fails": 0,
-                    "sum_time": 0.3543093204498291,
-                    "use_count": 1
-                },
-                "\u043f": {
-                    "value": "\u043f",
-                    "sum_fails": 0,
-                    "sum_time": 1.6614913940429688,
+                    "sum_time": 2.660689115524292,
                     "use_count": 4
                 },
-                "\u0445": {
-                    "value": "\u0445",
+                "u": {
+                    "value": "u",
                     "sum_fails": 0,
-                    "sum_time": 0.47870659828186035,
-                    "use_count": 1
-                },
-                "\u0432": {
-                    "value": "\u0432",
-                    "sum_fails": 0,
-                    "sum_time": 0.6418859958648682,
-                    "use_count": 3
-                },
-                "\u0430": {
-                    "value": "\u0430",
-                    "sum_fails": 0,
-                    "sum_time": 0.7483386993408203,
-                    "use_count": 6
-                },
-                "\u043b": {
-                    "value": "\u043b",
-                    "sum_fails": 0,
-                    "sum_time": 0.9790410995483398,
+                    "sum_time": 1.2349703311920166,
                     "use_count": 4
                 },
-                "\u0433": {
-                    "value": "\u0433",
-                    "sum_fails": 0,
-                    "sum_time": 0.22417116165161133,
-                    "use_count": 2
-                },
-                "\u0448": {
-                    "value": "\u0448",
-                    "sum_fails": 0,
-                    "sum_time": 0.8346827030181885,
-                    "use_count": 2
-                },
-                "\u0443": {
-                    "value": "\u0443",
-                    "sum_fails": 0,
-                    "sum_time": 0.2612569332122803,
-                    "use_count": 2
-                },
-                "\u044f": {
-                    "value": "\u044f",
-                    "sum_fails": 0,
-                    "sum_time": 0.20978784561157227,
-                    "use_count": 1
-                },
-                "\u043c": {
-                    "value": "\u043c",
-                    "sum_fails": 0,
-                    "sum_time": 0.1732339859008789,
-                    "use_count": 1
-                }
-            }
-        ],
-        [
-            10,
-            122,
-            62.9326,
-            "RuEasy",
-            {
-                "\u0440": {
-                    "value": "\u0440",
+                "r": {
+                    "value": "r",
                     "sum_fails": 1,
-                    "sum_time": 3.2002453804016113,
-                    "use_count": 6
-                },
-                "\u0430": {
-                    "value": "\u0430",
-                    "sum_fails": 1,
-                    "sum_time": 3.604048252105713,
+                    "sum_time": 3.4367034435272217,
                     "use_count": 11
                 },
-                "\u0437": {
-                    "value": "\u0437",
+                "e": {
+                    "value": "e",
                     "sum_fails": 0,
-                    "sum_time": 0.9624323844909668,
-                    "use_count": 4
+                    "sum_time": 3.1279640197753906,
+                    "use_count": 12
                 },
-                "\u0433": {
-                    "value": "\u0433",
-                    "sum_fails": 1,
-                    "sum_time": 2.948566198348999,
-                    "use_count": 3
-                },
-                "\u043b": {
-                    "value": "\u043b",
+                "n": {
+                    "value": "n",
                     "sum_fails": 0,
-                    "sum_time": 0.6302001476287842,
-                    "use_count": 5
+                    "sum_time": 1.906731367111206,
+                    "use_count": 8
                 },
-                "\u044f": {
-                    "value": "\u044f",
+                "t": {
+                    "value": "t",
                     "sum_fails": 0,
-                    "sum_time": 0.573793888092041,
-                    "use_count": 4
+                    "sum_time": 2.300863027572632,
+                    "use_count": 12
                 },
-                "\u0434": {
-                    "value": "\u0434",
+                ":": {
+                    "value": ":",
                     "sum_fails": 0,
-                    "sum_time": 1.5542991161346436,
-                    "use_count": 5
-                },
-                "\u044b": {
-                    "value": "\u044b",
-                    "sum_fails": 0,
-                    "sum_time": 0.5280203819274902,
-                    "use_count": 3
-                },
-                "\u0432": {
-                    "value": "\u0432",
-                    "sum_fails": 2,
-                    "sum_time": 3.173854351043701,
+                    "sum_time": 1.7367677688598633,
                     "use_count": 6
-                },
-                "\u0442": {
-                    "value": "\u0442",
-                    "sum_fails": 0,
-                    "sum_time": 1.0251178741455078,
-                    "use_count": 6
-                },
-                "\u044c": {
-                    "value": "\u044c",
-                    "sum_fails": 0,
-                    "sum_time": 0.2781341075897217,
-                    "use_count": 3
                 },
                 " ": {
                     "value": " ",
                     "sum_fails": 0,
-                    "sum_time": 3.9354453086853027,
+                    "sum_time": 4.9098289012908936,
                     "use_count": 19
                 },
-                "\u0441": {
-                    "value": "\u0441",
+                "i": {
+                    "value": "i",
                     "sum_fails": 0,
-                    "sum_time": 0.6238059997558594,
-                    "use_count": 4
-                },
-                "\u0451": {
-                    "value": "\u0451",
-                    "sum_fails": 0,
-                    "sum_time": 0.40920400619506836,
-                    "use_count": 1
-                },
-                ",": {
-                    "value": ",",
-                    "sum_fails": 0,
-                    "sum_time": 1.388681411743164,
-                    "use_count": 2
-                },
-                "\u0447": {
-                    "value": "\u0447",
-                    "sum_fails": 0,
-                    "sum_time": 0.14147281646728516,
-                    "use_count": 1
-                },
-                "\u043e": {
-                    "value": "\u043e",
-                    "sum_fails": 0,
-                    "sum_time": 1.0290026664733887,
-                    "use_count": 7
-                },
-                "\u0435": {
-                    "value": "\u0435",
-                    "sum_fails": 0,
-                    "sum_time": 1.2191534042358398,
+                    "sum_time": 1.821700096130371,
                     "use_count": 6
                 },
-                "\u043a": {
-                    "value": "\u043a",
+                "f": {
+                    "value": "f",
                     "sum_fails": 0,
-                    "sum_time": 1.8109867572784424,
-                    "use_count": 6
+                    "sum_time": 1.1782863140106201,
+                    "use_count": 5
                 },
-                "\u0443": {
-                    "value": "\u0443",
+                "(": {
+                    "value": "(",
                     "sum_fails": 0,
-                    "sum_time": 0.1242372989654541,
+                    "sum_time": 0.19923090934753418,
                     "use_count": 1
-                },
-                "\u043f": {
-                    "value": "\u043f",
-                    "sum_fails": 0,
-                    "sum_time": 1.7241218090057373,
-                    "use_count": 3
-                },
-                "\u043d": {
-                    "value": "\u043d",
-                    "sum_fails": 0,
-                    "sum_time": 0.3777167797088623,
-                    "use_count": 2
-                },
-                "\u0438": {
-                    "value": "\u0438",
-                    "sum_fails": 0,
-                    "sum_time": 0.2679450511932373,
-                    "use_count": 3
-                },
-                "\u043c": {
-                    "value": "\u043c",
-                    "sum_fails": 0,
-                    "sum_time": 0.4597773551940918,
-                    "use_count": 3
-                },
-                "\u0448": {
-                    "value": "\u0448",
-                    "sum_fails": 0,
-                    "sum_time": 0.22704696655273438,
-                    "use_count": 1
-                },
-                "\u0439": {
-                    "value": "\u0439",
-                    "sum_fails": 0,
-                    "sum_time": 0.43243956565856934,
-                    "use_count": 2
                 },
                 ".": {
                     "value": ".",
                     "sum_fails": 0,
-                    "sum_time": 0.5289621353149414,
+                    "sum_time": 0.9656758308410645,
+                    "use_count": 2
+                },
+                "v": {
+                    "value": "v",
+                    "sum_fails": 0,
+                    "sum_time": 0.7389261722564697,
+                    "use_count": 2
+                },
+                "a": {
+                    "value": "a",
+                    "sum_fails": 0,
+                    "sum_time": 0.17467832565307617,
                     "use_count": 1
                 },
-                "\u00ab": {
-                    "value": "\u00ab",
+                "l": {
+                    "value": "l",
+                    "sum_fails": 0,
+                    "sum_time": 2.830838441848755,
+                    "use_count": 5
+                },
+                ")": {
+                    "value": ")",
+                    "sum_fails": 0,
+                    "sum_time": 0.6114563941955566,
+                    "use_count": 1
+                },
+                ">": {
+                    "value": ">",
                     "sum_fails": 2,
-                    "sum_time": 21.966020822525024,
+                    "sum_time": 2.1807138919830322,
                     "use_count": 1
                 },
-                "\u0445": {
-                    "value": "\u0445",
-                    "sum_fails": 0,
-                    "sum_time": 0.5844516754150391,
-                    "use_count": 1
+                "=": {
+                    "value": "=",
+                    "sum_fails": 1,
+                    "sum_time": 1.4216625690460205,
+                    "use_count": 3
                 },
-                "\u0449": {
-                    "value": "\u0449",
+                "x": {
+                    "value": "x",
                     "sum_fails": 0,
-                    "sum_time": 0.9120590686798096,
-                    "use_count": 1
+                    "sum_time": 1.017951488494873,
+                    "use_count": 2
                 },
-                "\u00bb": {
-                    "value": "\u00bb",
+                "o": {
+                    "value": "o",
                     "sum_fails": 0,
-                    "sum_time": 5.777402400970459,
+                    "sum_time": 0.5091145038604736,
+                    "use_count": 2
+                },
+                "g": {
+                    "value": "g",
+                    "sum_fails": 0,
+                    "sum_time": 0.3470017910003662,
+                    "use_count": 2
+                },
+                "h": {
+                    "value": "h",
+                    "sum_fails": 0,
+                    "sum_time": 0.21057772636413574,
+                    "use_count": 2
+                },
+                "s": {
+                    "value": "s",
+                    "sum_fails": 0,
+                    "sum_time": 0.6261117458343506,
+                    "use_count": 2
+                },
+                "p": {
+                    "value": "p",
+                    "sum_fails": 0,
+                    "sum_time": 0.3896768093109131,
                     "use_count": 1
                 }
             }
         ],
         [
-            0,
-            130,
-            6.4218,
-            "RuEasy",
+            2,
+            116,
+            35.7952,
+            "EnEasy",
             {
-                "\u0437": {
-                    "value": "\u0437",
+                "t": {
+                    "value": "t",
                     "sum_fails": 0,
-                    "sum_time": 5.126518249511719,
-                    "use_count": 3
+                    "sum_time": 4.653223991394043,
+                    "use_count": 8
                 },
-                "\u0430": {
-                    "value": "\u0430",
+                "a": {
+                    "value": "a",
                     "sum_fails": 0,
-                    "sum_time": 0.004373788833618164,
-                    "use_count": 10
+                    "sum_time": 1.5050606727600098,
+                    "use_count": 6
+                },
+                "l": {
+                    "value": "l",
+                    "sum_fails": 0,
+                    "sum_time": 1.670267105102539,
+                    "use_count": 5
+                },
+                "k": {
+                    "value": "k",
+                    "sum_fails": 0,
+                    "sum_time": 0.7707452774047852,
+                    "use_count": 1
+                },
+                "i": {
+                    "value": "i",
+                    "sum_fails": 0,
+                    "sum_time": 1.5922234058380127,
+                    "use_count": 8
+                },
+                "n": {
+                    "value": "n",
+                    "sum_fails": 0,
+                    "sum_time": 1.0205650329589844,
+                    "use_count": 6
+                },
+                "g": {
+                    "value": "g",
+                    "sum_fails": 0,
+                    "sum_time": 0.21431207656860352,
+                    "use_count": 1
                 },
                 " ": {
                     "value": " ",
                     "sum_fails": 0,
-                    "sum_time": 0.008217334747314453,
+                    "sum_time": 5.14497971534729,
                     "use_count": 19
                 },
-                "\u043d": {
-                    "value": "\u043d",
+                "o": {
+                    "value": "o",
                     "sum_fails": 0,
-                    "sum_time": 0.0012888908386230469,
-                    "use_count": 3
+                    "sum_time": 2.276798963546753,
+                    "use_count": 7
                 },
-                "\u0438": {
-                    "value": "\u0438",
+                "h": {
+                    "value": "h",
                     "sum_fails": 0,
-                    "sum_time": 0.002569437026977539,
-                    "use_count": 6
-                },
-                "\u043c": {
-                    "value": "\u043c",
-                    "sum_fails": 0,
-                    "sum_time": 0.0010330677032470703,
-                    "use_count": 2
-                },
-                "\u0432": {
-                    "value": "\u0432",
-                    "sum_fails": 0,
-                    "sum_time": 0.0021593570709228516,
+                    "sum_time": 1.7686517238616943,
                     "use_count": 5
                 },
-                "\u0443": {
-                    "value": "\u0443",
+                "m": {
+                    "value": "m",
                     "sum_fails": 0,
-                    "sum_time": 0.0017614364624023438,
-                    "use_count": 4
-                },
-                "\u0449": {
-                    "value": "\u0449",
-                    "sum_fails": 0,
-                    "sum_time": 0.0004277229309082031,
+                    "sum_time": 0.19383955001831055,
                     "use_count": 1
                 },
-                "\u0435": {
-                    "value": "\u0435",
+                ",": {
+                    "value": ",",
+                    "sum_fails": 1,
+                    "sum_time": 1.0361754894256592,
+                    "use_count": 1
+                },
+                "'": {
+                    "value": "'",
                     "sum_fails": 0,
-                    "sum_time": 0.003983497619628906,
+                    "sum_time": 1.654782772064209,
+                    "use_count": 4
+                },
+                "s": {
+                    "value": "s",
+                    "sum_fails": 0,
+                    "sum_time": 1.1529302597045898,
+                    "use_count": 4
+                },
+                "d": {
+                    "value": "d",
+                    "sum_fails": 0,
+                    "sum_time": 3.2735230922698975,
                     "use_count": 9
                 },
-                "\u043b": {
-                    "value": "\u043b",
+                "c": {
+                    "value": "c",
                     "sum_fails": 0,
-                    "sum_time": 0.003552675247192383,
-                    "use_count": 8
-                },
-                "\u044c": {
-                    "value": "\u044c",
-                    "sum_fails": 0,
-                    "sum_time": 0.001749277114868164,
+                    "sum_time": 0.6196281909942627,
                     "use_count": 3
                 },
-                "\u043f": {
-                    "value": "\u043f",
+                "e": {
+                    "value": "e",
                     "sum_fails": 0,
-                    "sum_time": 0.0025949478149414062,
-                    "use_count": 6
-                },
-                "\u043e": {
-                    "value": "\u043e",
-                    "sum_fails": 0,
-                    "sum_time": 0.0060384273529052734,
+                    "sum_time": 2.3165676593780518,
                     "use_count": 14
                 },
-                "\u0442": {
-                    "value": "\u0442",
+                "p": {
+                    "value": "p",
                     "sum_fails": 0,
-                    "sum_time": 0.0025713443756103516,
-                    "use_count": 6
-                },
-                "\u0433": {
-                    "value": "\u0433",
-                    "sum_fails": 0,
-                    "sum_time": 0.0012881755828857422,
+                    "sum_time": 1.3972864151000977,
                     "use_count": 3
                 },
-                "\u0440": {
-                    "value": "\u0440",
+                "r": {
+                    "value": "r",
                     "sum_fails": 0,
-                    "sum_time": 0.0038635730743408203,
+                    "sum_time": 0.4954819679260254,
+                    "use_count": 4
+                },
+                "y": {
+                    "value": "y",
+                    "sum_fails": 0,
+                    "sum_time": 0.1996753215789795,
+                    "use_count": 2
+                },
+                ":": {
+                    "value": ":",
+                    "sum_fails": 0,
+                    "sum_time": 0.47203731536865234,
+                    "use_count": 1
+                },
+                "f": {
+                    "value": "f",
+                    "sum_fails": 0,
+                    "sum_time": 0.28939151763916016,
+                    "use_count": 1
+                },
+                "!": {
+                    "value": "!",
+                    "sum_fails": 0,
+                    "sum_time": 0.5017797946929932,
+                    "use_count": 1
+                },
+                "w": {
+                    "value": "w",
+                    "sum_fails": 0,
+                    "sum_time": 0.33441805839538574,
+                    "use_count": 1
+                },
+                ".": {
+                    "value": ".",
+                    "sum_fails": 1,
+                    "sum_time": 1.0063018798828125,
+                    "use_count": 1
+                }
+            }
+        ],
+        [
+            6,
+            115,
+            36.714,
+            "EnEasy",
+            {
+                "i": {
+                    "value": "i",
+                    "sum_fails": 0,
+                    "sum_time": 3.738720655441284,
                     "use_count": 9
+                },
+                "n": {
+                    "value": "n",
+                    "sum_fails": 0,
+                    "sum_time": 0.47775936126708984,
+                    "use_count": 4
+                },
+                " ": {
+                    "value": " ",
+                    "sum_fails": 0,
+                    "sum_time": 4.725419044494629,
+                    "use_count": 19
+                },
+                "c": {
+                    "value": "c",
+                    "sum_fails": 0,
+                    "sum_time": 0.7466230392456055,
+                    "use_count": 2
+                },
+                "r": {
+                    "value": "r",
+                    "sum_fails": 0,
+                    "sum_time": 1.8658254146575928,
+                    "use_count": 6
+                },
+                "y": {
+                    "value": "y",
+                    "sum_fails": 1,
+                    "sum_time": 2.722282648086548,
+                    "use_count": 4
+                },
+                "g": {
+                    "value": "g",
+                    "sum_fails": 0,
+                    "sum_time": 1.0206527709960938,
+                    "use_count": 2
+                },
+                "l": {
+                    "value": "l",
+                    "sum_fails": 1,
+                    "sum_time": 3.2910513877868652,
+                    "use_count": 7
+                },
+                "k": {
+                    "value": "k",
+                    "sum_fails": 0,
+                    "sum_time": 0.3586142063140869,
+                    "use_count": 1
+                },
+                "e": {
+                    "value": "e",
+                    "sum_fails": 0,
+                    "sum_time": 1.575530767440796,
+                    "use_count": 12
+                },
+                "t": {
+                    "value": "t",
+                    "sum_fails": 0,
+                    "sum_time": 2.6544530391693115,
+                    "use_count": 7
+                },
+                "h": {
+                    "value": "h",
+                    "sum_fails": 1,
+                    "sum_time": 2.396411180496216,
+                    "use_count": 6
+                },
+                "a": {
+                    "value": "a",
+                    "sum_fails": 0,
+                    "sum_time": 1.325016736984253,
+                    "use_count": 8
+                },
+                "!": {
+                    "value": "!",
+                    "sum_fails": 0,
+                    "sum_time": 1.166637897491455,
+                    "use_count": 2
+                },
+                "'": {
+                    "value": "'",
+                    "sum_fails": 0,
+                    "sum_time": 1.7322230339050293,
+                    "use_count": 3
+                },
+                "s": {
+                    "value": "s",
+                    "sum_fails": 0,
+                    "sum_time": 1.772104024887085,
+                    "use_count": 6
+                },
+                "d": {
+                    "value": "d",
+                    "sum_fails": 0,
+                    "sum_time": 0.6838767528533936,
+                    "use_count": 2
+                },
+                "o": {
+                    "value": "o",
+                    "sum_fails": 0,
+                    "sum_time": 0.8516707420349121,
+                    "use_count": 4
+                },
+                "f": {
+                    "value": "f",
+                    "sum_fails": 0,
+                    "sum_time": 0.3677175045013428,
+                    "use_count": 3
+                },
+                ",": {
+                    "value": ",",
+                    "sum_fails": 0,
+                    "sum_time": 0.6492369174957275,
+                    "use_count": 1
+                },
+                "p": {
+                    "value": "p",
+                    "sum_fails": 0,
+                    "sum_time": 0.22521758079528809,
+                    "use_count": 1
+                },
+                ";": {
+                    "value": ";",
+                    "sum_fails": 0,
+                    "sum_time": 0.21693873405456543,
+                    "use_count": 1
+                },
+                "v": {
+                    "value": "v",
+                    "sum_fails": 0,
+                    "sum_time": 0.5069286823272705,
+                    "use_count": 2
+                },
+                "u": {
+                    "value": "u",
+                    "sum_fails": 0,
+                    "sum_time": 0.24006104469299316,
+                    "use_count": 2
+                },
+                "m": {
+                    "value": "m",
+                    "sum_fails": 0,
+                    "sum_time": 0.8211064338684082,
+                    "use_count": 1
+                }
+            }
+        ],
+        [
+            11,
+            124,
+            43.5035,
+            "EnEasy",
+            {
+                "m": {
+                    "value": "m",
+                    "sum_fails": 1,
+                    "sum_time": 2.3915517330169678,
+                    "use_count": 2
+                },
+                "u": {
+                    "value": "u",
+                    "sum_fails": 0,
+                    "sum_time": 0.2041933536529541,
+                    "use_count": 1
+                },
+                "l": {
+                    "value": "l",
+                    "sum_fails": 0,
+                    "sum_time": 2.4321277141571045,
+                    "use_count": 7
+                },
+                "t": {
+                    "value": "t",
+                    "sum_fails": 0,
+                    "sum_time": 3.741847276687622,
+                    "use_count": 10
+                },
+                "i": {
+                    "value": "i",
+                    "sum_fails": 0,
+                    "sum_time": 1.555790901184082,
+                    "use_count": 11
+                },
+                "p": {
+                    "value": "p",
+                    "sum_fails": 0,
+                    "sum_time": 2.533914089202881,
+                    "use_count": 6
+                },
+                "c": {
+                    "value": "c",
+                    "sum_fails": 0,
+                    "sum_time": 1.1552104949951172,
+                    "use_count": 3
+                },
+                "a": {
+                    "value": "a",
+                    "sum_fails": 0,
+                    "sum_time": 2.532590866088867,
+                    "use_count": 10
+                },
+                "o": {
+                    "value": "o",
+                    "sum_fails": 0,
+                    "sum_time": 2.9380035400390625,
+                    "use_count": 8
+                },
+                "n": {
+                    "value": "n",
+                    "sum_fails": 0,
+                    "sum_time": 1.1772050857543945,
+                    "use_count": 6
+                },
+                " ": {
+                    "value": " ",
+                    "sum_fails": 1,
+                    "sum_time": 4.207766532897949,
+                    "use_count": 19
+                },
+                "b": {
+                    "value": "b",
+                    "sum_fails": 0,
+                    "sum_time": 0.16901588439941406,
+                    "use_count": 1
+                },
+                "e": {
+                    "value": "e",
+                    "sum_fails": 2,
+                    "sum_time": 5.410400390625,
+                    "use_count": 7
+                },
+                "d": {
+                    "value": "d",
+                    "sum_fails": 1,
+                    "sum_time": 1.7721891403198242,
+                    "use_count": 3
+                },
+                "s": {
+                    "value": "s",
+                    "sum_fails": 0,
+                    "sum_time": 2.765618085861206,
+                    "use_count": 7
+                },
+                "'": {
+                    "value": "'",
+                    "sum_fails": 0,
+                    "sum_time": 0.8083088397979736,
+                    "use_count": 2
+                },
+                "g": {
+                    "value": "g",
+                    "sum_fails": 0,
+                    "sum_time": 1.0565268993377686,
+                    "use_count": 3
+                },
+                "f": {
+                    "value": "f",
+                    "sum_fails": 0,
+                    "sum_time": 1.0956685543060303,
+                    "use_count": 3
+                },
+                "y": {
+                    "value": "y",
+                    "sum_fails": 0,
+                    "sum_time": 0.5274186134338379,
+                    "use_count": 3
+                },
+                ":": {
+                    "value": ":",
+                    "sum_fails": 0,
+                    "sum_time": 0.3449728488922119,
+                    "use_count": 1
+                },
+                "r": {
+                    "value": "r",
+                    "sum_fails": 1,
+                    "sum_time": 2.56333589553833,
+                    "use_count": 5
+                },
+                "h": {
+                    "value": "h",
+                    "sum_fails": 0,
+                    "sum_time": 0.45598649978637695,
+                    "use_count": 3
                 },
                 ".": {
                     "value": ".",
                     "sum_fails": 0,
-                    "sum_time": 0.0008924007415771484,
-                    "use_count": 2
-                },
-                "\u0434": {
-                    "value": "\u0434",
-                    "sum_fails": 0,
-                    "sum_time": 0.0004322528839111328,
-                    "use_count": 1
-                },
-                "\u044f": {
-                    "value": "\u044f",
-                    "sum_fails": 0,
-                    "sum_time": 0.0017130374908447266,
-                    "use_count": 4
-                },
-                "\u0431": {
-                    "value": "\u0431",
-                    "sum_fails": 0,
-                    "sum_time": 0.00042939186096191406,
-                    "use_count": 1
-                },
-                "\u0441": {
-                    "value": "\u0441",
-                    "sum_fails": 0,
-                    "sum_time": 0.0022094249725341797,
-                    "use_count": 5
-                },
-                "\u0448": {
-                    "value": "\u0448",
-                    "sum_fails": 0,
-                    "sum_time": 0.0008521080017089844,
-                    "use_count": 2
-                },
-                "\u0439": {
-                    "value": "\u0439",
-                    "sum_fails": 0,
-                    "sum_time": 0.0004248619079589844,
-                    "use_count": 1
-                },
-                "\u044b": {
-                    "value": "\u044b",
-                    "sum_fails": 0,
-                    "sum_time": 0.000457763671875,
+                    "sum_time": 0.6225583553314209,
                     "use_count": 1
                 },
                 ",": {
                     "value": ",",
                     "sum_fails": 0,
-                    "sum_time": 0.0008528232574462891,
+                    "sum_time": 0.7068769931793213,
                     "use_count": 2
                 }
             }

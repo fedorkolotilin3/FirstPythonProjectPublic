@@ -1,8 +1,9 @@
 {
-    "current_lib_num": 2,
+    "current_lib_num": 0,
     "libraries": [
         "Python",
         "EnEasy",
-        "RuEasy"
+        "RuEasy",
+        "test_lb"
     ]
 }

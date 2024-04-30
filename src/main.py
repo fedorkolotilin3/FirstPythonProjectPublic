@@ -21,8 +21,8 @@ def main(stdscr):
 
 
 if __name__ == '__main__':
-    try:
+    # try:
         curses.wrapper(main)
-    except BaseException as e:
-        print(e.args)
-        Log.close()
+    # except BaseException as e:
+    #     print(e.args)
+    #     Log.close()

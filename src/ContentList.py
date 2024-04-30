@@ -15,23 +15,25 @@ class ContentList (ContentGroup):
         super(ContentList, self).__init__(text_of_content, widget, x, y, parent)
 
     def activate(self):
-        self.is_active = True
-        if self.parent is not None:
-            self.parent.active_child = self
-        if self.active_child is not None:
-            self.active_child.activate()
-        else:
-            self.items[self.current_item_number].set_color(curses.color_pair(2))
-            self.print_content()
+        if self.items:
+            self.is_active = True
+            if self.parent is not None:
+                self.parent.active_child = self
+            if self.active_child is not None:
+                self.active_child.activate()
+            else:
+                self.items[self.current_item_number].set_color(curses.color_pair(2))
+                self.print_content()
 
     def key_event(self, key):
         if self.active_child is None:
             if key == KeyCodes.Keys.ESCAPE:
                 self.disable()
             if key == KeyCodes.Keys.ACTIVATE:
-                self.items[self.current_item_number].set_color(curses.color_pair(1))
-                self.print_content()
-                self.items[self.current_item_number].action()
+                if self.items:
+                    self.items[self.current_item_number].set_color(curses.color_pair(1))
+                    self.print_content()
+                    self.items[self.current_item_number].action()
             if key == KeyCodes.Keys.UP:
                 self.go_previous()
             if key == KeyCodes.Keys.DOWN:

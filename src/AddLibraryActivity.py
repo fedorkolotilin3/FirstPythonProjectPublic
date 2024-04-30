@@ -38,7 +38,7 @@ class AddLibraryActivity(Activity):
                 self.edit_text.color = curses.color_pair(1)
             else:
                 if self.parent_activity:
-                    Log.print("adding lib from addlibrary activity")
+                    # Log.print("adding lib from addlibrary activity")
                     self.parent_activity.add_lib(result_name, -2)
                 self.escape()
                 self.return_to_parent_activity()

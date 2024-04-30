@@ -2,13 +2,16 @@ import curses
 
 import KeyCodes
 import Log
-from Activity import Activity
+# импорт  ниже невозможен, т.к. иначе происходит циклический импорт и ошибка
+# from Activity import Activity
 
 
 class KeyListener:
     widget: curses.window = None
     listening: bool = False
-    listening_activities: list[Activity] = []
+    # здесь нельзя сделать тайпхинт, т.к. нельзя импортнуть
+    # listening_activities: list[Activity] = []
+    listening_activities = []
 
     def __init__(self, widget):
         self.raw_key = None
